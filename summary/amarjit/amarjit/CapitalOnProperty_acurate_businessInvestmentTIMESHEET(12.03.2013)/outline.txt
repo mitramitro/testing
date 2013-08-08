@@ -1,0 +1,88 @@
+Homepage
+
+	- list of seed capital
+        - list of capital with discription and their values 
+        - display latest startup news
+        - display currently Investors list
+        - links for sign up & sign in
+        - discribe scheme of invest and raise capital for your startup from friends, 
+          family and the crowds
+
+Investors
+
+        - Investing money in startups through Seedrs
+        - pages for explaining every step of investment benifit
+
+          
+Entrepreneurs
+
+        - various static links for describing benifits 
+        - provide some links for understand whole process
+  
+Seis    
+        
+        - Seed Enterprise Investment Scheme (SEIS) explains country offers such significant reliefs to investors in startups 
+          
+      
+Sign up
+        
+        - Sign up as user of the website
+        - Provide user information
+        
+
+Sign In
+
+        - after Login you can start investing
+        - with the help of login, you can easily manage your account
+
+My Account
+
+        - create your listing
+	- view types of Investment authorisation
+	- deposite or withdraw your funds
+	- You have the option of self-certifying as a high net worth individual or as a sophisticated investor
+	- call your friends to register 
+	- enter & save new password for signin
+
+Risk warning
+
+        - discribe each and every possibility in it
+        - discuss all cases of capital loss
+
+Contact Us
+
+	- Contact website using Press Enquiries or map address
+
+Privacy Policy
+        
+        - explain all terms of policy
+        - display all option of privacy
+        - different terms of Service   
+
+
+Blog
+
+	- List of posts
+	- View blog post
+	- Post & delete comments
+	- Featured posts
+
+Faq
+ 
+        - search and download all faq cateria
+        - also use the email option  
+
+Support
+
+        - submit a support request form by giving information
+        - create online chat with agents for further help  
+
+Admin 
+
+        - Users (Agents & users management)
+        - Manage risk warning and privacy policy
+	- various crud operation management with terms of service
+        - CMS management
+
+	
+(12th March 2013) - Project: Business Investment 

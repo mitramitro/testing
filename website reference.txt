@@ -1,0 +1,241 @@
+ 
+ajax pagination :-  http://www.fieg.nl/infinite-ajax-scroll-a-jquery-plugin
+
+mast template:- http://www.web2works.co.uk/blog2works/sql-insert-update-and-delete-queries-zend-db/ 
+jquery light box of images :- http://webdesignzo.com/jquery-lightbox-scripts-mootools-prototype/
+ Google Map:- http://www.zipmap.net/Alaska.htm,http://maps.huge.info/examples.htm
+ Login Registration form:- http://ginva.com/2012/06/55-useful-and-free-web-forms-css-html-jquery/  
+ 
+ Website:- http://www.dynamicdrive.com/dynamicindex11/javascriptsound.htm
+
+  Website For Shopping Cart:- http://net.tutsplus.com/tutorials/php/how-to-build-a-shopping-cart-using-codeigniter-and-jquery/
+
+  Webist for atuosearch dropdown menu:- http://www.designdim.com/2011/07/10-important-jquery-selectboxdropdown-plugins/
+
+  For Lightbox:- http://jqueryui.com/dialog/#modal-form
+
+  Verification e-mail:- http://youhack.me/2010/04/01/building-a-registration-system-with-email-verification-in-php/
+
+  connect facebook:- http://jondavidjohn.com/blog/2011/07/using-the-facebook-api-with-codeigniter
+
+  download css theme:- http://www.freshdesignweb.com/free-css-templates-professional-layout.html
+
+  Wordpress tutorial:- http://wp.tutsplus.com/tutorials/wordpress-theme-development-training-wheels-lesson-3/
+
+  Theme Download:- http://www.htmltemplates.net/ 
+
+  Yii Toturial(Themeimplementaion):-  http://mushfiq.com/2011/05/30/creating-a-yii-application-theme-from-a-html-template/ 
+				  :- http://www.joshuawinn.com/10-yii-framework-and-mvc-beginner-questions-problems-solved/
+
+  create login form:- http://www.yiiframework.com/forum/index.php/topic/32415-create-login-form/ 
+
+  for sound captcha:- http://arlindnushi.dervina.com/soundcaptcha/?p=impl
+
+		   :- http://tympanus.net/codrops/2009/09/22/21-free-captcha-sources/
+
+		   :- http://www.captcha.net/
+
+  zip code reference:- https://www.dougv.com/2009/03/27/getting-all-zip-codes-in-a-given-radius-from-a-known-point-zip-code-via-php-and-mysql/
+
+
+___________________________________________________________________________________________________________________
+Yii 
+
+ Admin Panel:- http://www.yiiframework.com/wiki/353/working-with-cgridview-in-admin-panel/#hh1
+
+ For Beginer:- www.yiiframework.com/wiki/250/yii-for-beginners/#hh1
+
+ CGridview:- http://stackoverflow.com/questions/11032058/yii-cbuttoncolumn-for-another-model-in-cgridview
+
+ foranytask in yii:- http://www.eha.ee/labs/yiiplay/index.php/en/site/widget?view=button
+
+ Display Image:- http://www.yiiframework.com/wiki/331/displaying-image-in-a-cgridview-column/
+
+ Upload image:- http://www.yiiframework.com/wiki/349/how-to-upload-image-photo-and-path-entry-in-database-with-update-functionality/
+
+ Group Grid View Demo:- http://groupgridview.demopage.ru/
+
+ CHtml Reference:- http://www.yiiframework.com/wiki/48/by-example-chtml/#hh0
+
+ for any code:- http://code.google.com/p/yii-user-management/downloads/detail?name=YiiUserManagement_0.6.tar.bz2&can=2&q=
+
+ Creating Conroller:- http://www.human-element.com/Blog/ArticleDetailsPage/tabid/91/ArticleID/69/Magento-Non-CMS-Pages-Creating-Pages-Via-Frontend-Routers.aspx
+
+
+
+
+
+______________________________________________________________________________________________________________________
+
+Shopping Cart:- 
+
+idea for e-commerce sites:- http://crb.co.in/ecommerce/onlineshopping.html
+
+sdlc for e-commerce sites:- http://kaderphy.hubpages.com/hub/Online-Shopping-System
+_______________________________________________________________________________________________________________________
+Magento
+
+
+Install Mangento:- http://www.sboeconnect.com/blog/magentocommerce/how-to-install-magento-on-wamp-server-localhost.html
+To implement a theme:- http://www.magentocommerce.com/design_guide/articles/how-magento-builds-content
+perfect installation guide3:- http://www.magentocommerce.com/knowledge-base/entry/magento-installation-cheat-sheet
+install by downloader guide2:- http://www.magentocommerce.com/wiki/1_-_installation_and_configuration/magento_installation_guide
+installation guide 1:- http://www.magentocommerce.com/knowledge-base/entry/installing-the-sample-data-for-magento
+
+for theme implementation:- http://www.magentocommerce.com/wiki/4_-_themes_and_template_customization/0_-_theming_in_magento/package
+create controller in magento:- http://www.magentocommerce.com/knowledge-base/entry/magento-for-dev-part-3-magento-controller-dispatch
+for layout(best tutorial):- http://www.magentocommerce.com/knowledge-base/entry/magento-for-dev-part-4-magento-layouts-blocks-and-templates
+Show Product:- http://www.magentocommerce.com/wiki/4_-_themes_and_template_customization/cms_and_home_page/add_featured_products_to_home_page
+Convert Website into Mobile:-http://www.ginwiz.com/?utm_expid=55893549-0http://www.ginwiz.com/?utm_expid=55893549-0
+
+Developing guide:- http://www.magentocommerce.com/knowledge-base/entry/magento-for-dev-part-1-introduction-to-magento
+
+Developing proper guide :- http://www.pierrefay.com/magento-create-block-44
+
+demo site:- http://www.overstockdeals.com/
+
+best selling product:- http://www.magentocommerce.com/boards/viewthread/14764/#t57324
+			http://www.magentocommerce.com/boards/viewthread/74329/
+			http://www.magthemes.com/magento-blog/display-a-product-category-with-pagination-on-any-magento-cms-page/
+helping best selling product :- http://way2discuss.blogspot.in/2012/05/magento-best-selling-product-lists-on.html
+helping feature product :- http://forum.emthemes.com/showthread.php?1177-how-to-create-featured-product-in-magento
+Featured product:- http://www.magentocommerce.com/wiki/5_-_modules_and_development/catalog/how_to_create_a_featured_product
+
+Customize top menu :- http://www.classyllama.com/development/magento-development/editing-magentos-top-links-the-better-way
+
+Featured product in magento :- http://www.magentocommerce.com/wiki/5_-_modules_and_development/catalog/how_to_create_a_featured_product
+
+How to show total count and total product:- http://www.magentocommerce.com/boards/viewthread/72654/
+
+
+________________________________________________________________________________________________________________________
+Social site:
+www.webspeke.com
+
+9lession
+For Signup:- http://www.domagojsalopek.com/Details/Create-a-Registration-and-Login-System-using-Facebook-Registration-Plugin/21
+
+For Signup:- http://tilomitra.com/hello-world-2/
+
+forlogin and setup:- http://hitsend.ca/2010/10/05/facebook-connect-user-authentication-using-the-new-graph-api-in-codeigniter/
+
+Logout Facebook:- http://facebook.stackoverflow.com/questions/8430474/fb-logout-called-without-an-access-token
+
+facebook and gmail login:_  http://www.fglogin.com/ 
+Design:-  http://all-free-download.com/free-website-templates/personal_site_template_1112.html 
+
+___________________________________________________________________________________________________________________________
+DOM:- 
+
+For dom intiallization:- http://www.devx.com/webdev/Article/41975
+
+
+___________________________________________________________________________________________________________________________
+jquery:- 
+
+for popup:-http://www.ericmmartin.com/projects/simplemodal-demos/
+for jquery demo:- http://www.dezignmatterz.com/new-jquery-plugins/
+____________________________________________________________________________________________________________________________
+create .exe file in php:-www.sitepoint.com/forums/showthread.php?96227-PHP-GTK-Bcompiler
+			 http://www.bambalam.se/bamcompile/
+			  http://stackoverflow.com/questions/9460877/create-exe-file-in-php-with-mysql-database
+			  http://stackoverflow.com/questions/7434767/php-possible-to-compile-a-web-application-into-a-windows-application
+			  http://www.exeoutput.com/download.php
+			  http://oops.opsat.net/doc/php-gtk-the-web-your-computer-and-you.html
+
+	for php-gtk program:- http://grokbase.com/t/php/php-gtk-general/107cgfea4g/database-connection-and-retrieving-values
+	for desktop programming:- http://www.kksou.com/php-gtk2/sample-codes/
+
+
+_____________________________________________________________________________________
+store project:- 
+
+SourceForge.net
+github
+create project in github:- https://help.github.com/articles/create-a-repo
+install github:- https://help.github.com/articles/set-up-git
+		http://stackoverflow.com/questions/6610680/how-do-i-add-my-whole-project-on-github
+
+____________________________________________________________________________________________________________________________
+For Zend Framework:- 
+installation guide:- http://www.123webdesignbournemouth.co.uk/web-design-blog/web-design/web-design-bournemouth/how-to-set-up-zend-framework-with-wamp-for-local-testing-and-web-development/
+step by step guide:- http://www.1stwebdesigner.com/tutorials/zend-framework-first-steps/
+zend toturial:- http://www.phpeveryday.com/articles/Zend-Framework-Basic-Tutorial-P840.html
+To install zend framework:- http://www.webpixel.gr/blog/zend-quickstart-tutorial/2
+Install zend framework by good tutorial:- www.lametadesign.com/blog/admin/how-install-zend-framework-using-wamp-20-windows-xp
+Userguide:- http://net.tutsplus.com/tutorials/php/zend-framework-from-scratch/
+zend framework command:- framework.zend.com/manual/1.12/en/zend.tool.usage.cli.html
+zend ajax:- http://zendgeek.blogspot.in/2009/07/ajax-with-json-and-prototype-in-zend.html
+
+Captch in zend framework:- http://www.hardcode.nl/archives_4/article_605-zend-captcha-image-example.htm
+Language support by database:- http://devzone.zend.com/1438/adding-multi-language-support-to-web-applications-with-php-and-pear/
+For Login form:- http://www.phpeveryday.com/articles/Zend-Framework-Login-Creating-Authentication-P566.html
+http://juniorgrossi.com/basic-crud-operations-with-zend-framework/
+edit operation:- http://phpdeveloperspace.wordpress.com/2012/10/28/add-edit-delete-operations-in-zend-framework/
+form element helper:- http://stackoverflow.com/questions/3250681/rendering-only-the-form-tag
+module setting:- http://stackoverflow.com/questions/16068776/zend-framework-not-include-the-default-module-in-url
+relational database:- http://framework.zend.com/manual/1.12/en/zend.db.table.relationships.html
+relatinal database:- http://net.tutsplus.com/tutorials/php/zend-framework-from-scratch-models-and-integrating-doctrine-orm/
+Sending message in social site :- http://www.9lessons.info/2013/05/message-conversation-database-design.html
+authentication and authorization:- http://www.ens.ro/2012/03/20/zend-authentication-and-authorization-tutorial-with-zend_auth-and-zend_acl/
+best toturial :- http://blog.insicdesigns.com/2008/10/zend-framework-blog-application-tutorial-part-7-authorization-with-zend_acl-and-revised-styling/
+______________________________________________________________________________________________________________________________
+google maps toturial:- http://econym.org.uk/gmap/index.htm
+google map toturial:- https://developers.google.com/maps/documentation/javascript/v2/examples/
+Clustor mapping code:- http://www.galengrover.com/projects/PHPGoogleMaps-Examples/markers_clustering.php
+for clustor map:- http://www.clustrmaps.com/
+
+
+______________________________________________________________________________________________________________________________
+Text to speech
+http://www.oddcast.com/home/demos/tts/tts_example.php
+__________________________________________________________________________________________________________________________Symfony:- 
+
+Creating Blog:- http://tutorial.symblog.co.uk/docs/configuration-and-templating.html
+Toturial book:- http://symfony.com/legacy/doc/jobeet/1_4/en/01?orm=Propel
+Toturial guide:- http://symfony.com/doc/2.1/book/page_creation.html
+symfony blog toturial:- http://tutorial.symblog.co.uk/
+symfony database connection:- http://symfony.com/doc/current/book/doctrine.html
+Symfony php code for template:- http://symfony.com/doc/current/cookbook/templating/PHP.html
+Symfony2 cheetcode:- http://www.symfony2cheatsheet.com/
+syfony2 validatio in controller form:- http://symfony2forum.org/threads/13-Validating-form-without-entity
+symfony2 pagination:- http://www.insanevisions.com/article/305/Tutorials/Pagination-with-Symfony-2
+		   :- http://blog.gemcoders.com/2011/09/11/symfony2-pagination-controller-service-data-sorting/
+		   :- http://inchoo.net/tools-frameworks/symfony-2-pagination/
+______________________________________________________________________________________________________________________
+Know web build with:- www.builtwith.com
+_______________________________________________________________________________________________________________________
+Star Rating Website:- 
+
+http://webdesign.torn.be/tutorials/javascript/prototype/star-rating-system/
+http://net.tutsplus.com/tutorials/html-css-techniques/building-a-5-star-rating-system-with-jquery-ajax-and-php/
+http://www.tutorialspoint.com/
+
+_______________________________________________________________________________________________________________________
+Wordpress Webiste reference:- 
+
+for theme impelmentaiton:- http://speckyboy.com/2012/01/11/html-css-blog-layout-theme-implementation-for-wordpress/
+for flash message:- http://mikeeverhart.net/php/session-based-flash-messages/
+for flash message:- http://codecanyon.net/item/wordpress-notifcation-message-plugin/232675
+website reference::- http://codex.wordpress.org/Plugin_API/Action_Reference
+blog:- http://webdesignledger.com/inspiration/23-examples-of-flat-web-design
+	:-http://stalecheerios.com/blog/
+
+
+
+______________________________________________________________________________________________________________________
+Sql:- 
+
+for order by and group by statement :- http://localhost/phpmyadmin/tbl_sql.php?db=zend_social&table=message_list&token=8ec9dbee39e624d38b40c637f40f3ee6
+
+_______________________________________________________________________________________________________________________
+
+For the housing searching api:-  Www.zillow.com
+
+_______________________________________________________________________________________________________________________
+Jquery:- 
+
+userful accordian jquery plugin:- http://www.designer-daily.com/10-jquery-plugins-for-better-website-navigation-33012
+there level jquery navigation:- http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/
+jquery navigation:- http://www.designchemical.com/lab/jquery-vertical-mega-menu-plugin/examples/#
+image different effect :- http://netfruits.com/2013/03/jquery-image-zoom-plugins/

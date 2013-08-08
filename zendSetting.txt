@@ -1,0 +1,23 @@
+step1=>:set the enveriment variable-
+	D:\wamp\bin\php\php5.3.10
+Step2=>:zend folder paste the in any drive but wamp folder not.
+Step3=>:open the cmd
+	cd paste folder(drive) name
+for example=>paste folder=D:/zendProject
+	cd D:zendProject\bin
+	D:zendProject\bin> zf.bat create project E:\wamp\www\folder_name
+	
+
+commnd------------->zf.bat create project
+
+setting===============>httpd.conf (file open)
+
+#LoadModule rewrite_module modules/mod_rewrite.so
+remove(#);
+LoadModule rewrite_module modules/mod_rewrite.so
+
+
+setting===============>php.ini (file open)
+
+; Windows: "\path1;\path2"
+;include_path = ".;c:\php\includes;E:\wamp\www\ZendProject\library"

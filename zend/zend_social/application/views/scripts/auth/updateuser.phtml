@@ -1,0 +1,50 @@
+<style>
+.clr{ clear:both;}
+
+.user_cont{ width:452px; height:auto; float:left; margin:20px 0 0 20px;}
+
+.user_cont h2{ font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold; color:#3c3c3c; float:left; margin:0px; padding:0px; width:195px; text-transform:none;}
+
+.user_cont. h1{ font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold; color:#3c3c3c; float:left; margin:0px; padding:0px; width:500px; text-transform:none;}
+
+.required { font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold; color:#3c3c3c; float:left; margin:0px; padding:0px; width:500px; text-transform:none;}
+
+.user_cont h3{ font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#3c3c3c; float:left; margin:0px; padding:0px; width:500px;text-transform:none;}
+
+
+.user_input{ width:250px; height:auto; float:left; border:solid 1px #d2d2d2; padding:5px;}
+
+.user_text{ font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold; color:#3c3c3c;}
+.user_submit{ font-family:Arial, Helvetica, sans-serif; font-size:17px; font-weight:bold; color:#3c3c3c; margin: 40px 0 0 -74px;}
+#showpassword {
+    display: none;
+}
+
+.errors{color:red;font-size:16px; list-style:none;margin-left:-40px;}
+</style>
+
+<div class="user_cont">
+<div id="cperror" style="color:red;height:13px;font-size:12px;width:500px;"><?php  
+//echo $this->message['error'];?></div>
+<?php 
+
+		$this->editform->setAction($this->url());
+		echo $this->editform->getDecorator('Form')->setElement($this->editform)->render(false);
+		//echo $this->form->SetLabel('Username Testing');
+	
+?>
+         <h2>E-Mail Address :</h2>
+       <?php echo $this->editform->getElement('email');?>
+        <div id="perror" style="color:red;height:13px;font-size:12px;width:500px;"></div>
+        
+        <h2>User Name :</h2>
+       <?php echo $this->editform->getElement('username');?>
+                     <div id="usererror" style="color:red;height:13px;font-size:12px;margin-left: 194px;
+    width: 250px;"></div>
+    
+      <center><?php 
+	  			$this->editform->submit->setLabel('Update');
+	 			 echo $this->editform->getElement('submit');?></center>
+      
+    <!-- </form>-->
+     </div>

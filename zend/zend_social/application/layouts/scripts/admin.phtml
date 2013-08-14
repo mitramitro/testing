@@ -1,0 +1,60 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Admin Login</title>
+<link href="<?php echo $this->baseUrl('admin/css/admin_style.css')?>" rel="stylesheet" type="text/css" />
+
+<script src="<?php echo $this->baseUrl('admin/js/common.js')?>" type="text/javascript"></script>
+<script src="<?php echo $this->baseUrl('admin/js/adminLogin.js')?>" type="text/javascript"></script>
+ <script type="text/javascript">
+// <![CDATA[
+var myMenu;
+window.onload = function() {
+	myMenu = new SDMenu("my_menu");
+	myMenu.init();
+};
+// ]]>
+</script> 
+</head>
+<body>
+<!--admin con start here-->
+<div id="admin_con">
+<!--header strips start here-->
+<div id="header_strips">
+<h1>Admin</h1></div>
+<!--header strips start here-->
+<?php 
+$sess = new Zend_Session_Namespace('Namespace');
+ $login=$sess->logindata;
+ foreach($login as $value){
+	 	$username=$value->username;
+		$id=$value->id;
+	 }
+?>
+<div class="strips">
+<?php if($id!=''){?>
+<div class="left_box">Welcome&nbsp; <?php echo $username; ?>!</div>
+<div class="right_box"><a href="<?php echo $this->baseUrl('adminpanel/adminmain/logout');?>">Logout</a></div>
+<?php } ?>
+</div>
+<!--content panel start here-->
+<div id="contentpanel_1">
+<!-- sidbar-->
+<?php if($id!=''){?>
+<?php require('leftPanel.php');?>
+<?php }?>
+<!-- content -->
+<?php echo $this->layout()->content;?>
+<!--right panel start here-->
+<div class="clr"></div></div>
+<!--content panel ends here-->
+<!--footer start here-->
+<div id="footer">Copyright@2013. All Right Reserved</div>
+<!--footer endss here-->
+<div class="clr"></div></div>
+
+<!--admin con end here-->
+</body>
+</html>

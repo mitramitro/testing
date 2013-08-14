@@ -1,0 +1,190 @@
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Core - Free CSS template by ChocoTemplates.com</title>
+	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+	<!--<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />-->
+    
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+	 <?php echo $this->headLink()->appendStylesheet($this->baseUrl("css/style.css")); ?> 
+     
+      
+   
+    
+     <?php echo $this->headScript()->appendFile($this->baseUrl('/js/jquery8.js'));?>
+     
+   <?php //echo $this->headScript()->appendFile($this->baseUrl().'/js/jquery8.js');?>
+    
+    
+	<!--<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>-->
+	<!--[if lt IE 9]>
+		<script src="js/modernizr.custom.js"></script>
+	<![endif]-->
+	<!--<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/functions.js" type="text/javascript"></script>-->
+</head>
+<body>
+	<!-- wrapper -->
+	<div  id="wrapper">
+		<!-- header -->
+		<header>
+        <?php //echo $this->baseUrl();?>
+         <?php //echo $this->headLink()->appendStylesheet() ?>
+			<div class="shell">
+				<h1 id="logo"><a href="#">Core
+                
+                
+            
+                
+                
+                </a></h1>
+				<div class="contact">
+					<p class="ico phone-ico"><span></span>+132 456 789</p>
+					<p class="ico mail-ico"><span></span><a href="#"><?php $username=$this->layout()->whatever; 
+																			foreach($username as $val)
+																			{
+																				echo $val->username;
+																			}
+					
+																			?></a></p>
+                                                                            
+				</div>
+                
+			</div>
+            <?php echo $this->navigation()->breadcrumbs()->setLinkLast(false)->setMinDepth(0)->render(); ?>	
+		</header>
+		<!-- end of header -->
+		<!-- navigation -->
+       
+		<nav id="navigation">
+			<div class="shell">
+           				 <?php
+						/* $page = new Zend_Navigation_Page_Mvc(array(
+									'action'     => 'login',
+									'controller' => 'registration',
+									));*/
+ //$page->test=getHref('Home');
+ //echo $page->getHref();
+
+						  //echo $this->navigation()->menu(); 
+			
+
+
+						 ?>
+                        <!--<ul><li> <a href="<?php //echo $page->getHref();?>">Home</a></li></ul>-->
+				<ul>
+						<li><span class="bottom-arr"></span>	<a href="<?Php
+                            //echo $this->url(array('controller'=>'registration','action'=>'login'));
+                                echo $this->baseUrl('registration/login');
+	?>">HOME</a>
+
+</li>
+				
+                   
+	<li><span class="bottom-arr"></span>	<a href="<?Php
+        //echo $this->url(array('controller'=>'registration','action'=>'register'));
+        echo $this->baseUrl('registration/register');
+        ?>">REGISTER</a>
+
+</li>
+           <li><span class="bottom-arr"></span>	<a href="<?Php
+               //echo $this->url(array('controller'=>'registration','action'=>'contactus'));
+               echo $this->baseUrl('registration/contactus');
+	?>">Contact Us</a>
+
+</li>    
+        <li><span class="bottom-arr"></span>	<a href="<?Php
+            //echo $this->url(array('controller'=>'registration','action'=>'showall'));
+            echo $this->baseUrl('registration/showall');
+	?>">UserList</a>
+	  
+
+</li>   
+                    <?php if($username!='')
+					{?>
+					<li><span class="bottom-arr"></span><a href="<?Php
+                        //echo $this->url(array('controller'=>'registration','action'=>'logout'));
+                        echo $this->baseUrl('registration/logout');
+                        ?>">LOGOUT</a>
+
+</li>
+		<?php }?>			
+				</ul>
+				                </div>
+		</nav>
+
+		<!-- end of navigation -->
+		<!-- slider-holder -->
+		<!--<div class="slider-holder">
+			<div class="shell">
+				<span class="slider-shadow"></span>
+				<div class="slider flexslider">
+					<ul class="slides">
+						<li>
+							<img src="css/images/slide-img.png" alt="" />
+							<div class="slide-cnt">
+								<h2>Innovative Design Solutions Ranging</h2>
+								<p>Lorem ipsum dolor sit amet, con-<br />sectetur adipiscing elit. Praesent non tortor quis tellus euismod sodalestis elit lorem, vehicula sit amet dictum nec, congue venenatis quam. Cras fermentum scelerisque ma .. <a href="#">Read More</a></p>
+								<a href="#" class="slider-btn">Explore Project</a>
+							</div>
+						</li>
+						<li>
+							<img src="css/images/slide-img.png" alt="" />
+							<div class="slide-cnt">
+								<h2>Innovative Design Solutions Ranging</h2>
+								<p>Lorem ipsum dolor sit amet, con-<br />sectetur adipiscing elit. Praesent non tortor quis tellus euismod sodalestis elit lorem, vehicula sit amet dictum nec, congue venenatis quam. Cras fermentum scelerisque ma .. <a href="#">Read More</a></p>
+								<a href="#" class="slider-btn">Explore Project</a>
+							</div>
+						</li>
+						<li>
+							<img src="css/images/slide-img.png" alt="" />
+							<div class="slide-cnt">
+								<h2>Innovative Design Solutions Ranging</h2>
+								<p>Lorem ipsum dolor sit amet, con-<br />sectetur adipiscing elit. Praesent non tortor quis tellus euismod sodalestis elit lorem, vehicula sit amet dictum nec, congue venenatis quam. Cras fermentum scelerisque ma .. <a href="#">Read More</a></p>
+								<a href="#" class="slider-btn">Explore Project</a>
+							</div>
+						</li>
+						<li>
+							<img src="css/images/slide-img.png" alt="" />
+							<div class="slide-cnt">
+								<h2>Innovative Design Solutions Ranging</h2>
+								<p>Lorem ipsum dolor sit amet, con-<br />sectetur adipiscing elit. Praesent non tortor quis tellus euismod sodalestis elit lorem, vehicula sit amet dictum nec, congue venenatis quam. Cras fermentum scelerisque ma .. <a href="#">Read More</a></p>
+								<a href="#" class="slider-btn">Explore Project</a>
+							</div>
+						</li>
+						<li>
+							<img src="css/images/slide-img.png" alt="" />
+							<div class="slide-cnt">
+								<h2>Innovative Design Solutions Ranging</h2>
+								<p>Lorem ipsum dolor sit amet, con-<br />sectetur adipiscing elit. Praesent non tortor quis tellus euismod sodalestis elit lorem, vehicula sit amet dictum nec, congue venenatis quam. Cras fermentum scelerisque ma .. <a href="#">Read More</a></p>
+								<a href="#" class="slider-btn">Explore Project</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</div>-->	
+		<!-- end of slider-holder -->
+     
+    <?php echo $this->layout()->content ?>
+     
+     
+     <div id="footer">
+		<div class="shell">
+			<nav class="footer-nav">
+				<a href="#" class="active">HOME</a>
+				<a href="#">ABOUT</a>
+				<a href="#">SERVICES</a>
+				
+				<a href="#">BLOG</a>
+				<a href="#">CONTACT US</a>
+                <a href="#">LOGOUT</a>
+			</nav>
+			<p class="copy">Copyright &copy; 2012 Design by <a href="http://chocotemplates.com" target="_blank">www.ChocoTemplates.com</a></p>
+			<div class="cl">&nbsp;</div>
+		</div>
+	</div>
+    </div>
+</body>
+</html>

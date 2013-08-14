@@ -1,0 +1,10 @@
+<?php foreach($this->paginator as $record)
+    {
+        echo $record['username'].'\n';
+        echo $record['email']. '\n';
+        
+    }
+
+    echo $this->paginationControl($this->paginator, 'Sliding', 'pagination.phtml'); 
+	
+	?>

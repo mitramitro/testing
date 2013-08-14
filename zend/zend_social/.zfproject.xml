@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<projectProfile type="default" version="1.12.3">
+  <projectDirectory>
+    <projectProfileFile filesystemName=".zfproject.xml"/>
+    <applicationDirectory classNamePrefix="Application_">
+      <configsDirectory>
+        <applicationConfigFile type="ini"/>
+      </configsDirectory>
+      <controllersDirectory>
+        <controllerFile controllerName="Index">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="testing"/>
+        </controllerFile>
+        <controllerFile controllerName="Error"/>
+        <controllerFile controllerName="Auth">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="register"/>
+          <actionMethod actionName="checkuser"/>
+          <actionMethod actionName="checkusername"/>
+          <actionMethod actionName="login"/>
+          <actionMethod actionName="logout"/>
+          <actionMethod actionName="home"/>
+          <actionMethod actionName="imageupload"/>
+          <actionMethod actionName="updateuser"/>
+        </controllerFile>
+        <controllerFile controllerName="Home">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="action"/>
+        </controllerFile>
+        <controllerFile controllerName="Social">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="alluser"/>
+          <actionMethod actionName="sendfriendrequest"/>
+          <actionMethod actionName="friendrequest"/>
+          <actionMethod actionName="confirmrequest"/>
+          <actionMethod actionName="friendlist"/>
+          <actionMethod actionName="deletefriendrequest"/>
+          <actionMethod actionName="sendmessage"/>
+          <actionMethod actionName="messagelist"/>
+          <actionMethod actionName="conversation"/>
+          <actionMethod actionName="changestatus"/>
+          <actionMethod actionName="conversationmessage"/>
+          <actionMethod actionName="ajaxconversation"/>
+          <actionMethod actionName="refreshcoversation"/>
+        </controllerFile>
+        <controllerFile controllerName="Zendauth">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="home"/>
+          <actionMethod actionName="testing"/>
+        </controllerFile>
+        <controllerFile controllerName="Testing">
+          <actionMethod actionName="index"/>
+        </controllerFile>
+      </controllersDirectory>
+      <formsDirectory>
+        <formFile formName="Register"/>
+        <formFile formName="Login"/>
+        <formFile formName="Testing"/>
+        <formFile formName="Fileupload"/>
+        <formFile formName="Useredit"/>
+        <formFile formName="Edituser"/>
+        <formFile formName="Sendmessage"/>
+        <formFile formName="Zendlogin"/>
+      </formsDirectory>
+      <layoutsDirectory enabled="false">
+        <layoutScriptsDirectory>
+          <layoutScriptFile layoutName="layout"/>
+        </layoutScriptsDirectory>
+      </layoutsDirectory>
+      <modelsDirectory>
+        <dbTableDirectory>
+          <dbTableFile dbTableName="Register"/>
+          <dbTableFile dbTableName="Admin"/>
+          <dbTableFile dbTableName="Sendmessage"/>
+        </dbTableDirectory>
+        <modelFile modelName="Social"/>
+      </modelsDirectory>
+      <modulesDirectory>
+        <moduleDirectory moduleName="Admin">
+          <configsDirectory enabled="false"/>
+          <controllersDirectory>
+            <controllerFile controllerName="Admin">
+              <actionMethod actionName="index"/>
+            </controllerFile>
+            <controllerFile controllerName="Demo">
+              <actionMethod actionName="index"/>
+            </controllerFile>
+          </controllersDirectory>
+          <layoutsDirectory enabled="false">
+            <layoutScriptsDirectory enabled="false"/>
+          </layoutsDirectory>
+          <modelsDirectory>
+            <dbTableDirectory enabled="false"/>
+          </modelsDirectory>
+          <servicesDirectory enabled="false"/>
+          <viewsDirectory>
+            <viewScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Admin">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Demo">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+            </viewScriptsDirectory>
+            <viewHelpersDirectory/>
+            <viewFiltersDirectory/>
+          </viewsDirectory>
+        </moduleDirectory>
+        <moduleDirectory moduleName="adminpanel">
+          <configsDirectory enabled="false"/>
+          <controllersDirectory>
+            <controllerFile controllerName="Adminmain">
+              <actionMethod actionName="index"/>
+              <actionMethod actionName="home"/>
+              <actionMethod actionName="logout"/>
+              <actionMethod actionName="manageuser"/>
+              <actionMethod actionName="deleteuser"/>
+              <actionMethod actionName="updateuser"/>
+              <actionMethod actionName="changepassword"/>
+            </controllerFile>
+          </controllersDirectory>
+          <formsDirectory>
+            <formFile formName="Adminlogin"/>
+            <formFile formName="Changepassword"/>
+          </formsDirectory>
+          <layoutsDirectory enabled="false">
+            <layoutScriptsDirectory enabled="false"/>
+          </layoutsDirectory>
+          <modelsDirectory>
+            <dbTableDirectory>
+              <dbTableFile dbTableName="Admin"/>
+              <dbTableFile dbTableName="User"/>
+            </dbTableDirectory>
+          </modelsDirectory>
+          <servicesDirectory enabled="false"/>
+          <viewsDirectory>
+            <viewScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Adminmain">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Adminmain">
+                <viewScriptFile forActionName="home"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Adminmain">
+                <viewScriptFile forActionName="logout"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Adminmain">
+                <viewScriptFile forActionName="manageuser"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Adminmain">
+                <viewScriptFile forActionName="deleteuser"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Adminmain">
+                <viewScriptFile forActionName="updateuser"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Adminmain">
+                <viewScriptFile forActionName="changepassword"/>
+              </viewControllerScriptsDirectory>
+            </viewScriptsDirectory>
+            <viewHelpersDirectory/>
+            <viewFiltersDirectory/>
+          </viewsDirectory>
+        </moduleDirectory>
+      </modulesDirectory>
+      <servicesDirectory enabled="false"/>
+      <viewsDirectory>
+        <viewScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Index">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Error">
+            <viewScriptFile forActionName="error"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Index">
+            <viewScriptFile forActionName="testing"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Auth">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Auth">
+            <viewScriptFile forActionName="register"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Auth">
+            <viewScriptFile forActionName="checkuser"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Auth">
+            <viewScriptFile forActionName="checkusername"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Auth">
+            <viewScriptFile forActionName="login"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Auth">
+            <viewScriptFile forActionName="logout"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Home">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Home">
+            <viewScriptFile forActionName="action"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Auth">
+            <viewScriptFile forActionName="home"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Auth">
+            <viewScriptFile forActionName="imageupload"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Auth">
+            <viewScriptFile forActionName="updateuser"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="alluser"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="sendfriendrequest"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="friendrequest"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="confirmrequest"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="friendlist"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="deletefriendrequest"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="sendmessage"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="messagelist"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="conversation"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="changestatus"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="conversationmessage"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="ajaxconversation"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Social">
+            <viewScriptFile forActionName="refreshcoversation"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Zendauth">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Zendauth">
+            <viewScriptFile forActionName="home"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Zendauth">
+            <viewScriptFile forActionName="testing"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Testing">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+        </viewScriptsDirectory>
+        <viewHelpersDirectory/>
+        <viewFiltersDirectory enabled="false"/>
+      </viewsDirectory>
+      <bootstrapFile filesystemName="Bootstrap.php"/>
+    </applicationDirectory>
+    <dataDirectory enabled="false">
+      <cacheDirectory enabled="false"/>
+      <searchIndexesDirectory enabled="false"/>
+      <localesDirectory enabled="false"/>
+      <logsDirectory enabled="false"/>
+      <sessionsDirectory enabled="false"/>
+      <uploadsDirectory enabled="false"/>
+    </dataDirectory>
+    <docsDirectory>
+      <file filesystemName="README.txt"/>
+    </docsDirectory>
+    <libraryDirectory>
+      <zfStandardLibraryDirectory enabled="false"/>
+    </libraryDirectory>
+    <publicDirectory>
+      <publicStylesheetsDirectory enabled="false"/>
+      <publicScriptsDirectory enabled="false"/>
+      <publicImagesDirectory enabled="false"/>
+      <publicIndexFile filesystemName="index.php"/>
+      <htaccessFile filesystemName=".htaccess"/>
+    </publicDirectory>
+    <projectProvidersDirectory enabled="false"/>
+    <temporaryDirectory enabled="false"/>
+    <testsDirectory>
+      <testPHPUnitConfigFile filesystemName="phpunit.xml"/>
+      <testPHPUnitBootstrapFile filesystemName="bootstrap.php"/>
+      <testApplicationDirectory>
+        <testApplicationControllerDirectory>
+          <testApplicationControllerFile forControllerName="Index"/>
+        </testApplicationControllerDirectory>
+      </testApplicationDirectory>
+      <testLibraryDirectory/>
+    </testsDirectory>
+  </projectDirectory>
+</projectProfile>

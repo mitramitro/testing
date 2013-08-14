@@ -1,0 +1,61 @@
+<script>
+	setTimeout(
+		function()
+		{
+			var con = $('#umsg').html();
+			if(con!=''){
+					$('#umsg').hide('slow');
+				}
+			
+		},5000);
+</script>
+
+          <article class="col1">
+            <div class="pad_left1">
+            <?php foreach($this->userdata as $value){
+					?>
+			
+              <h2 class="pad_bot1">Welcome&nbsp;<u><?php echo $value->username;?></u></h2>
+            </div>
+            <div class="wrapper pad_bot1">
+          
+              <?php if($value->userfile==''){?>
+				   <figure class="left marg_right1"><img width="120" height="120"  alt="" src="<?php echo $this->baseUrl('images/images.jpg');?>">  </figure>
+				 <?php  }
+				 else{?>
+              <figure class="left marg_right1"><img width="120" height="120"  alt="" src="<?php echo $this->baseUrl('upload/'.$value->userfile);?>">
+              
+              </figure>
+              <?php }?>
+              <p class="pad_bot1 pad_top2"><strong>Student of the year</strong></p>
+              <p> </p>
+            </div>
+            <div style=" margin-top:-8px;">
+            <?php   $this->fileform->setAction($this->url());
+					echo $this->fileform;
+			?>
+            </div><br/>
+            <div class="pad_left1">
+              <div class="box2">
+              
+                <div class="wrapper">
+                
+                  <div class="cols">
+                  	<span id="umsg" style="color: #F00"><?php echo $this->message['update'];?></span>
+                    <ul class="list3">
+                      <li>Name : <?php echo $value->username ?></li>
+                      <li>Gender : <?php echo $value->gender;?></li>
+                      <li>E-Mail : <?php echo $value->email;?></li>
+                      <li><a class="thickbox" href="<?php echo $this->baseUrl('auth/updateuser/id/'.$value->id);?>?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=300&amp;width=300">Edit</a></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+            
+            </div>
+            <?php }?>
+            </article>
+            
+       
+     

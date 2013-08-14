@@ -1,0 +1,31 @@
+<article class="col1">
+            <div class="pad_left1">
+              <h2 class="pad_bot1">All Friend Request </h2>
+            </div>
+            
+            <?php
+			$count = count($this->request);
+			if($count != ''){
+			foreach($this->request as $value){
+							
+						?>
+            <div class="wrapper pad_bot2">
+             <?php if($value['userfile']==''){?>
+              <figure class="left marg_right1"><img height="100" width="100" alt="" src="<?php echo $this->baseUrl('images/images.jpg');?>"></figure>
+             <?php }else{?>
+             	<figure class="left marg_right1"><img height="100" width="100" alt="" src="<?php 
+				echo $this->baseUrl('upload/'.$value['userfile']);?>"></figure>
+
+             <?php }?>
+              <p class="pad_bot1 pad_top2"><strong>Name : <?php echo $value['username'];?></strong> <br>
+              								<strong>Gender : <?php echo $value['gender'];?></strong>
+               </p>
+              <a class="button marg_left1" href="<?php echo $this->baseUrl('social/confirmrequest/sender/'.$this->id.'/reciever/'.$value['id']);?>"><span><span>Confirm</span></span></a> 
+              <a class="button marg_left1" href="<?php echo $this->baseUrl('social/deletefriendrequest/sender/'.$value['sender'].'/reciever/'.$value['reciever']);?>"><span><span>Discard</span></span></a> </div>
+            <?php }
+			}
+			else
+			{?>
+            <h4>Record Not Found.....</h4>
+            <?php }?>
+          </article>

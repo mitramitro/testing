@@ -1,0 +1,42 @@
+<?php header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+?>
+<div id="rightpanel">
+	<table border="1" width="100%" cellpadding="5" cellspacing="5">
+	  <tr>
+		<td colspan="4" class="heading" >Dashboard:</td>
+	  </tr>
+	 <tr>
+	 <td width="100%">
+	
+      <table width="90%" border="0" align="center" cellspacing="5" id="iconpanel">
+		<tbody><tr>
+		  <td width="20%"><a href="<?php echo $this->url(array('controller'=>'adminmain','action'=>'home'));?>">
+          <img src="<?php echo $this->baseUrl('images/dashboard.png');?>" alt="Dashboard" title="Dashboard" border="0" 
+          height="50" width="50" ></a></td>
+           
+           <!-- <td width="20%"><a href="<?php //echo ADMIN_MODULES_PATH_HTTP;?>payment/managebidingPayment.php"><img src="<?php //echo ADMIN_IMG_PATH;?>../../images/dashboard.gif" alt="Dashboard" title="Dashboard" border="0" ></a></td>
+             <td width="20%"><a href="<?php //echo ADMIN_MODULES_PATH_HTTP;?>dashdetail/manageDashdetail.php"><img src="<?php //echo ADMIN_IMG_PATH;?>../../images/dashboard.gif" alt="Dashboard" title="Dashboard" border="0" ></a></td>
+              <td width="20%"><a href="<?php //echo ADMIN_MODULES_PATH_HTTP;?>home/admindashboard.php"><img src="<?php //echo ADMIN_IMG_PATH;?>../../images/dashboard.gif" alt="Dashboard" title="Dashboard" border="0" ></a></td>-->
+		 
+		</tr>
+         <tr>
+                <td height="25px" class="icon-text"><a href="<?php echo $this->url(array('controller'=>'adminmain','action'=>'home'));?>">Dashboard</a></td>
+              <!--  <td height="25px" class="icon-text"><a href="<?php //echo ADMIN_MODULES_PATH_HTTP;?>payment/manageNormalPayment.php">Api Hotel Detail</a></td>
+                <td height="25px" class="icon-text"><a href="<?php //echo ADMIN_MODULES_PATH_HTTP;?>payment/managebidingPayment.php">Bid Now Detail</a></td>
+                <td height="25px" class="icon-text"><a href="<?php //echo ADMIN_MODULES_PATH_HTTP;?>dashdetail/manageDashdetail.php">Add Commision</a></td>
+                <td height="25px" class="icon-text"><a href="<?php //echo ADMIN_MODULES_PATH_HTTP;?>home/admindashboard.php">Dashboard</a></td>-->
+		   
+		    </tr>
+             <tr>
+		    <td height="25px"></td>
+		    <td height="25px"></td>
+		    <td height="25px"></td>
+		    <td height="25px"></td>
+            <td height="25px"></td>
+		    </tr>
+	  </tbody></table>
+	  </td></tr>
+	 </table>
+</div>

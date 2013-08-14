@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>PayPal Digital Goods Express Checkout Sample App</title>
+<script type="text/javascript" src="https://www.paypalobjects.com/js/external/dg.js"></script> 
+</head>
+
+<body>
+
+<h2>PayPal Digital Goods Express Checkout Sample App</h2>
+<p><b>Zero Gravity Widget #1</b> $1.50</p>
+<p><a href="Buy.php?item_number=S3KMCGMP3" id="btnS3KMCGMP3"><img border="0" src="https://www.paypal.com/en_US/i/btn/btn_dg_pay_w_paypal.gif" /></a></p>
+
+<p><b>Zero Gravity Widget #2</b> $2.75</p>
+<p><a href="Buy.php?item_number=S3KMFMMP3" id="btnS3KMFMMP3"><img border="0" src="https://www.paypal.com/en_US/i/btn/btn_dg_pay_w_paypal.gif" /></a></p>
+
+<p><b>Zero Gravity Widget #3</b> $1.00</p>
+<p><a href="Buy.php?item_number=S3KMHHMP3" id="btnS3KMHHMP3"><img border="0" src="https://www.paypal.com/en_US/i/btn/btn_dg_pay_w_paypal.gif" /></a></p>
+
+<script type="text/javascript">
+var embeddedPPFlow1 = new PAYPAL.apps.DGFlow( {trigger : 'btnS3KMCGMP3'});
+var embeddedPPFlow2 = new PAYPAL.apps.DGFlow( {trigger : 'btnS3KMFMMP3'});
+var embeddedPPFlow3 = new PAYPAL.apps.DGFlow( {trigger : 'btnS3KMHHMP3'});
+
+function MyEmbeddedFlow(embeddedFlow) {
+this.embeddedPPObj = embeddedFlow;
+this.paymentSuccess = function() {
+	
+this.embeddedPPObj.closeFlow();
+
+window.location.href = "success.php";
+};
+this.paymentCanceled = function() {
+this.embeddedPPObj.closeFlow();
+
+window.location.href = "fail.html";
+};
+
+}
+var myEmbeddedPaymentFlow1 = new MyEmbeddedFlow(embeddedPPFlow1);
+var myEmbeddedPaymentFlow2 = new MyEmbeddedFlow(embeddedPPFlow2);
+var myEmbeddedPaymentFlow3 = new MyEmbeddedFlow(embeddedPPFlow3);
+</script> 
+</body>
+</html>

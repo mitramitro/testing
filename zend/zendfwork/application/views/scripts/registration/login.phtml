@@ -1,0 +1,108 @@
+<!-- services -->
+		<section class="services">
+			<div class="shell">
+				<div class="boxes">
+					<h2>What Do We Do?</h2>
+					<a href="#" class="all-services"><?php //echo $this->logindata;?></a>
+					<div class="cl">&nbsp;</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/print-design.png" alt="" />
+							<h3>PRINT DESIGN</h3>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/graphic-design.png" alt="" />
+							<h3>GRAPHIC DESIGN</h3>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/logo-design.png" alt="" />
+							<h3>LOGO DESIGN</h3>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/vector-characters.png" alt="" />
+							<h3>VECTOR CHARACTERS</h3>
+						</a>
+					</div>
+					<div class="cl">&nbsp;</div>
+				</div>
+			</div>
+		</section>
+		<!-- end of services -->
+		<!-- main -->
+		<div class="main">
+			<div class="shell">
+				<section>
+					<!-- content -->
+					<div class="content">
+                    
+						<h2>Log In</h2>
+                        <h3><?php 
+	
+	
+	//$this->messages->setAction($this->url());
+	$message=$this->messages;
+    echo $message[0]['loginerror'];
+	/*foreach($message as $value)
+	{
+			print_r($value);
+	}*/
+        //$msg=$this->loginerror;
+                           // print_r($msg);
+        //echo $msg[0];
+                            //echo "success";
+	?></h3>
+						    <?php
+		$this->form->setAction($this->url());
+		echo $this->form;
+?>
+					</div>
+					<!-- end of content -->
+					<!-- aside -->
+					<aside>
+						<div class="widget">
+							<h2></h2>
+							<h3><?php 
+	
+	
+	//$this->messages->setAction($this->url());
+								//$message=$this->messages;
+							//foreach($message as $value)
+								//{
+									//echo $value;
+								//}
+								?></h3>
+						    <?php
+								//$this->register->setAction($this->url());
+								//echo $this->register;
+							?>
+                            
+							<div class="cl">&nbsp;</div>
+						</div>
+						<!--<div class="widget">
+							<h2>Our Clients</h2>
+							<div class="img-holder">
+								<a href="#"><img src="css/images/clients-img1.png" alt="" /></a>
+							</div>
+							<div class="img-holder">
+								<a href="#"><img src="css/images/clients-img2.png" alt="" /></a>
+							</div>
+							<div class="img-holder">
+								<a href="#"><img src="css/images/clients-img3.png" alt="" /></a>
+							</div>
+							<div class="cl">&nbsp;</div>
+						</div>-->
+					</aside>
+					<!-- end of aside -->
+					<div class="cl">&nbsp;</div>
+				</section>
+			</div>
+		</div>
+		<!-- end of main -->
+		<div id="footer-push"></div>
+	</div>

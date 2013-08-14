@@ -1,0 +1,150 @@
+<section class="services">
+			<div class="shell">
+				<div class="boxes">
+					<h2>What Do We Do?</h2>
+					<a href="#" class="all-services"><?php //echo $this->logindata;?></a>
+					<div class="cl">&nbsp;</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/print-design.png" alt="" />
+							<h3>PRINT DESIGN</h3>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/graphic-design.png" alt="" />
+							<h3>GRAPHIC DESIGN</h3>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/logo-design.png" alt="" />
+							<h3>LOGO DESIGN</h3>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/vector-characters.png" alt="" />
+							<h3>VECTOR CHARACTERS</h3>
+						</a>
+					</div>
+					<div class="cl">&nbsp;</div>
+				</div>
+			</div>
+		</section>
+		<!-- end of services -->
+		<!-- main -->
+		<div class="main">
+			<div class="shell">
+				<section>
+					<!-- content -->
+					<div class="content">
+                    	
+						<h2>Contact Us</h2>
+                        <h3><?php  //$msg=$this->success;
+										
+										//echo $msg[0];
+										?></h3>
+                       <?php 
+					
+				
+				
+                 
+				    
+	//$this->messages->setAction($this->url());
+	
+	?>
+    
+		<?php //echo $this->jQuery();?>
+        					<div style="font-size:16px;
+                            color:#00C; font-style:bold"
+                            >
+        				    <?php
+							
+							
+						   
+				$errorsMessages =$this->form->getMessages();
+				if(isset($errorsMessages['name']['isEmpty'])){
+					echo "Enter Username";
+				}
+				echo "<br/>";
+				if(isset($errorsMessages['email']['isEmpty'])){
+					echo "Enter E-mail Address";
+				}echo "<br/>";
+				if(isset($errorsMessages['message']['isEmpty'])){
+					echo "Enter Message";
+				}			
+		$this->form->setAction($this->url());
+		echo $this->form;
+		
+		
+?>
+					</div>
+                    </div>
+					<!-- end of content -->
+					<!-- aside -->
+					<aside>
+						<div class="widget">
+							<h2><?php 
+							 // echo $this->element->getElement('username'); 
+							 //$errormsg=$this->error;
+							 //echo "<pre>";
+							// print_r($errormsg);
+							// echo $errormsg['username'];
+							 ?></h2>
+                 
+							
+						           <?php 
+							
+
+
+						/*$form = new Zend_Form();
+ 
+						$fruits  =  array(
+ 
+						'Yellow'=>array(
+						'1'=>'Banana',
+						'2'=>'Lemon'),
+ 
+						'Green'=>array(
+					'3'=>'Green Apple',
+					'4'=>'Pear')
+ 
+						);
+ 
+					$form->setAction('registration');
+					$form->setMethod('post');
+					$form->setAttrib('id', 'add');
+$form->addElement('text', 'number', array('validators'=>array('digits'),'label'=>'Quantity of Fruit','required'=> true));
+$form->addElement('select', 'fruits', array('label'=>'Fruits','required'=> true,'multioptions'=>$fruits));
+$form->addElement('checkbox', 'active', array('label'=>'Active','required'=> true));
+$form->addElement('hidden', 'FormType' ,array('value'=>'fruits'));
+$form->addElement('submit', 'Save');
+ 
+echo $form;*/
+?>
+                            
+							<div class="cl">&nbsp;</div>
+						</div>
+						<!--<div class="widget">
+							<h2>Our Clients</h2>
+							<div class="img-holder">
+								<a href="#"><img src="css/images/clients-img1.png" alt="" /></a>
+							</div>
+							<div class="img-holder">
+								<a href="#"><img src="css/images/clients-img2.png" alt="" /></a>
+							</div>
+							<div class="img-holder">
+								<a href="#"><img src="css/images/clients-img3.png" alt="" /></a>
+							</div>
+							<div class="cl">&nbsp;</div>
+						</div>-->
+					</aside>
+					<!-- end of aside -->
+					<div class="cl">&nbsp;</div>
+				</section>
+			</div>
+		</div>
+		<!-- end of main -->
+		<div id="footer-push"></div>
+	</div>

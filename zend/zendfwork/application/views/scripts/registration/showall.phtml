@@ -1,0 +1,193 @@
+<section class="services">
+			<div class="shell">
+				<div class="boxes">
+					<h2>What Do We Do?</h2>
+					<a href="#" class="all-services"><?php //echo $this->logindata;?></a>
+					<div class="cl">&nbsp;</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/print-design.png" alt="" />
+							<h3>PRINT DESIGN</h3>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/graphic-design.png" alt="" />
+							<h3>GRAPHIC DESIGN</h3>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/logo-design.png" alt="" />
+							<h3>LOGO DESIGN</h3>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<img src="css/images/vector-characters.png" alt="" />
+							<h3>VECTOR CHARACTERS</h3>
+						</a>
+					</div>
+					<div class="cl">&nbsp;</div>
+				</div>
+			</div>
+		</section>
+		<!-- end of services -->
+		<!-- main -->
+		<div class="main">
+			<div class="shell">
+				<section>
+					<!-- content -->
+					<div class="content">
+                    	
+						<h2>User List</h2>
+                        <h2><?php $message=$this->messages;
+                            print_r($message);
+                            echo $message[0]['update'];?></h2>
+                 <?php   $form = new Zend_Form();
+ 
+						
+ 
+					$form->setAction('registration');
+					$form->setMethod('post');
+					$form->setAttrib('id', 'add');
+//echo $form;?>
+						<?php 
+							$con=$this->country;
+							$state=$this->state;
+							$city=$this->city;
+							/*for($i=0;$i<4;$i++)
+							{
+								echo $con[$i][0]['name'];
+							}*/
+							/*foreach($this->country as $value)
+							{
+								echo $value[0]['name'];	
+							}*/
+						?>
+                       <table width="1000" border="1" cellpadding="5" cellspacing="0" >
+                      <tr>
+                        <th width="15%">Username</th>
+                        <th width="15%">Email</th>
+                        <th width="15%">Gender</th>
+                        <th width="15%">Country</th>
+                        <th width="5%">State</th>
+                        <th width="5%">City</th> 
+                        <th width="10">Image</th>
+                        <th width="20%">Action</th>                     
+                      </tr>
+                      <?php 
+					  $count=count($this->userlist);
+					  //echo $count;
+					  $i=0;
+					  foreach($this->paginator as $val)
+					  {
+							
+						  //echo $i;	  
+					  ?>
+                      <tr>
+                        <td width="15%"><?php echo $val['username'];?></td>
+                        <td width="15%"><?php echo $val['email'];?></td>
+                        <td width="15%"><?php echo $val['gender'];?></td>
+                        <td width="10%"><?php echo $con[$i][0]['name'];?></td>
+                        <td width="10%"><?php echo $state[$i][0]['name'];?></td>
+                        <td width="10%"><?php echo $city[$i][0]['name'];?></td>
+                        <td width="10%"><!--show simple image--><img src="<?php echo $this->baseUrl("images/$val[file]"); ?>" width="100" height="70" /><?php 
+						
+						  //using this for image button. It has direct action to from action. 
+						  /*echo $form->addElement (
+      										  'image',
+       										 'submitImage',
+       							 array(
+           									 'width' => 200,
+            								'height' => 200,
+            								'src' => $this->baseUrl("images/Desert.jpg"),
+           									 'class' => 'fade'
+        									)
+   									 );*/
+						  ?></td>  
+                        <td><a href="<?php echo $this->baseUrl('registration/userupdate/id/'.$val['id']);?>">Update</a>||<a href="<?php echo $this->url(array('controller'=>'registration',
+						'action'=>'delete1','id'=>$val['id']));?>">Delete</a></td>
+                      </tr>
+                      <?php
+							$i++;
+							}
+							
+							?>
+                        <tr >
+                        	<td colspan="8"><center><?php echo $this->paginationControl($this->paginator, 'Sliding', 'paginationadvance.phtml');?></center></td>
+                        </tr>
+                    </table>
+
+                       
+       
+       
+        					
+                    </div>
+					<!-- end of content -->
+					<!-- aside -->
+					<aside>
+						<div class="widget">
+							<h2><?php 
+							 // echo $this->element->getElement('username'); 
+							 //$errormsg=$this->error;
+							 //echo "<pre>";
+							// print_r($errormsg);
+							// echo $errormsg['username'];
+							 ?></h2>
+                 
+							
+						           <?php 
+							
+
+
+						/*$form = new Zend_Form();
+ 
+						$fruits  =  array(
+ 
+						'Yellow'=>array(
+						'1'=>'Banana',
+						'2'=>'Lemon'),
+ 
+						'Green'=>array(
+					'3'=>'Green Apple',
+					'4'=>'Pear')
+ 
+						);
+ 
+					$form->setAction('registration');
+					$form->setMethod('post');
+					$form->setAttrib('id', 'add');
+$form->addElement('text', 'number', array('validators'=>array('digits'),'label'=>'Quantity of Fruit','required'=> true));
+$form->addElement('select', 'fruits', array('label'=>'Fruits','required'=> true,'multioptions'=>$fruits));
+$form->addElement('checkbox', 'active', array('label'=>'Active','required'=> true));
+$form->addElement('hidden', 'FormType' ,array('value'=>'fruits'));
+$form->addElement('submit', 'Save');
+ 
+echo $form;*/
+?>
+                            
+							<div class="cl">&nbsp;</div>
+						</div>
+						<!--<div class="widget">
+							<h2>Our Clients</h2>
+							<div class="img-holder">
+								<a href="#"><img src="css/images/clients-img1.png" alt="" /></a>
+							</div>
+							<div class="img-holder">
+								<a href="#"><img src="css/images/clients-img2.png" alt="" /></a>
+							</div>
+							<div class="img-holder">
+								<a href="#"><img src="css/images/clients-img3.png" alt="" /></a>
+							</div>
+							<div class="cl">&nbsp;</div>
+						</div>-->
+					</aside>
+					<!-- end of aside -->
+					<div class="cl">&nbsp;</div>
+				</section>
+			</div>
+		</div>
+		<!-- end of main -->
+		<div id="footer-push"></div>
+	</div>

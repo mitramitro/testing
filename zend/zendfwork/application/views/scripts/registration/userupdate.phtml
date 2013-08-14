@@ -1,0 +1,127 @@
+<script>
+
+    function stateshow()
+    {
+        var country;
+        country=$("#country").val();
+
+        $.get('<?php echo $this->url(array('controller'=>'registration','action'=>'state'));?>',{con_id:country},function(result){
+
+                $("#state").html(result);
+            }
+
+        );
+
+        //alert(country);
+    }
+
+    function cityshow()
+    {
+        var country;
+        state=$("#state").val();
+
+        $.get('<?php echo $this->url(array('controller'=>'registration','action'=>'city'));?>',{sta_id:state},function(result){
+
+                $("#city").html(result);
+            }
+
+        );
+
+        //alert(country);
+    }
+</script>
+
+<section class="services">
+    <div class="shell">
+        <div class="boxes">
+            <h2>What Do We Do?</h2>
+            <a href="#" class="all-services"><?php //echo $this->logindata;?></a>
+            <div class="cl">&nbsp;</div>
+            <div class="box">
+                <a href="#">
+                    <img src="css/images/print-design.png" alt="" />
+                    <h3>PRINT DESIGN</h3>
+                </a>
+            </div>
+            <div class="box">
+                <a href="#">
+                    <img src="css/images/graphic-design.png" alt="" />
+                    <h3>GRAPHIC DESIGN</h3>
+                </a>
+            </div>
+            <div class="box">
+                <a href="#">
+                    <img src="css/images/logo-design.png" alt="" />
+                    <h3>LOGO DESIGN</h3>
+                </a>
+            </div>
+            <div class="box">
+                <a href="#">
+                    <img src="css/images/vector-characters.png" alt="" />
+                    <h3>VECTOR CHARACTERS</h3>
+                </a>
+            </div>
+            <div class="cl">&nbsp;</div>
+        </div>
+    </div>
+</section>
+<!-- end of services -->
+<!-- main -->
+<div class="main">
+    <div class="shell">
+        <section>
+            <!-- content -->
+            <div class="content">
+
+                <h2>Sign Up</h2>
+                <h3><?php  //$msg=$this->success;
+                    //echo $msg[0];
+                    ?></h3>
+                <?php
+
+
+
+
+                //$this->messages->setAction($this->url());
+
+                ?>
+                <h2><?php  //print_r($this->error);?></h2>
+                <?php //echo $this->jQuery();?>
+                <?php
+                $this->updateform->setAction($this->url());
+                $form=$this->updateform;
+                echo $form;
+
+
+                ?>
+            </div>
+            <!-- end of content -->
+            <!-- aside -->
+            <aside>
+                <div class="widget">
+
+
+                    <div class="cl">&nbsp;</div>
+                </div>
+                <!--<div class="widget">
+                    <h2>Our Clients</h2>
+                    <div class="img-holder">
+                        <a href="#"><img src="css/images/clients-img1.png" alt="" /></a>
+                    </div>
+                    <div class="img-holder">
+                        <a href="#"><img src="css/images/clients-img2.png" alt="" /></a>
+                    </div>
+                    <div class="img-holder">
+                        <a href="#"><img src="css/images/clients-img3.png" alt="" /></a>
+                    </div>
+                    <div class="cl">&nbsp;</div>
+                </div>-->
+            </aside>
+            <!-- end of aside -->
+            <div class="cl">&nbsp;</div>
+        </section>
+    </div>
+</div>
+<!-- end of main -->
+<div id="footer-push"></div>
+</div>

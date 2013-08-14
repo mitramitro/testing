@@ -1,0 +1,146 @@
+   <article class="col2 pad_left2">
+            <div class="pad_left1">
+            <h3><?php 
+			$alldata = $this->sidebar();
+			//$message=$alldata['message'];
+			//echo $message['msgsuccess'];
+			//echo $this->message['msgsuccess'];
+			//print_r($this->sendmessage);
+			?><h3>
+              <h2>Friend List
+              
+              </h2>
+            </div>
+           <?php 
+			  //Zend_View::addHelperPath();
+			  //echo "<pre>";
+			  //$alldata = $this->sidebar();
+			  $alluser=$alldata['alluser'];
+			  $friendrequest= $alldata['friendrequest']; 
+			  $friendlist = $alldata['friendlist'];
+			 
+			  
+			  ?>
+            <ul class="list1 pad_bot1">
+              <?php 
+			 //echo "success";
+			  //print_r($friendlist);
+			  
+			  $count = count($friendlist);
+			  
+			 if($count!=''){
+			  foreach($friendlist as $value){
+				  			
+				  		?>
+              <li>
+              <?php if($value['userfile'] == ''){?>
+             	 <img width="66" height="69"  alt="" src="<?php echo $this->baseUrl('images/images.jpg');?>"/>
+              <?php }else{?>
+              	 <img width="66" height="69"  alt="" src="<?php echo $this->baseUrl('upload/'.$value['userfile']);?>"/>
+              <?php }?>
+              <div style=" float: right;
+    margin-right: 93px;;"> Name: <?php echo $value['username'];?> <br/>
+Gender: <?php echo $value['gender'];?>               </div>
+				
+			   <a class="thickbox" href="<?php echo $this->baseUrl('social/sendmessage/sender/'.$value['reciever'].'/reciever/'.$value['sender']);?>?&amp;KeepThis=true&amp;TB_iframe=true&amp;height=270&amp;width=370">Send Message</a>
+			  
+              </li>
+           		
+       		
+              
+             
+              <?php }
+			?>
+           
+			  <?php }else{?>
+              	<li>No Record Found...</li>
+              <?php }?>
+               <a class="button" href="#"><span><span>All Friends</span></span></a>
+            </ul>
+           
+            
+             <div class="pad_left1">
+              <h2>Near by people
+               <?php 
+			   /*foreach($friendrequest as $frndreq){
+					  $fr_id[]=$frndreq['reciever'];	
+				}*/
+				//print_r($fr_id);
+				
+				?>  
+              </h2>
+            
+            </div>
+              
+            <ul class="list1 pad_bot1">
+            <?php 
+				//print_r($this->alluser);
+				//die;
+			  //$count=count($fr_id);
+			  //$i=0;
+			  $test = $alluser;
+			  
+			  
+				  foreach($test as $key){
+					  	   
+				?>
+        				
+                <li>
+                <?php if($key['userfile']==''){?>
+              			<img width="70" height="70"  alt="" src="<?php echo $this->baseUrl('images/images.jpg');?>"/>
+              		  <?php }else{?>
+                      
+                      <img border="5" width="66" height="69" alt="No Image"
+                       src="<?php echo $this->baseUrl('upload/'.$key['userfile']);?>"/>
+                      <?php }?>
+                      
+              <div style=" float: right;
+    margin-right: 40px; width:150px; backgroundcolor:#CCC">Name: <?php echo $key['username'];?> <br/>
+Gender: <?php echo $key['gender'];?></div>
+
+
+				<?php 
+					 //echo $this->state();
+					 //echo $key->id;
+					 //echo $fr_id[$i];
+						//if($key->id == $fr_id[$i]){
+							/* foreach($friendrequest as $frndreq){
+								 echo $frndreq['reciever'];
+								 if($frndreq['reciever'] == $key->id){
+									 echo "success";
+									break;
+								 }
+								 else
+								 {
+									echo "fail";	
+									break; 
+								}
+								 
+							 }*/
+							  
+								 
+							 
+					  		if($key['request_status'] == 'sending'){		
+							?>
+							<a href="javascript:void(0)">Request Sent</a>
+                <?php 
+							}
+							elseif($key['request_status'] == 'pending'){
+				
+				
+				?>
+                        <a href="<?php echo $this->baseUrl('social/sendfriendrequest/sender_id/'.$this->id.'/reciever_id/'.$key['alluser_id']);?>">Add as Friend</a>
+                        <?php 
+				
+							}
+					?>
+               
+              </li>
+         	
+               <?php  //$i++; 
+							
+						
+			  }?>
+              
+            </ul>
+            <a class="button" href="#"><span><span>See All</span></span></a> </article>

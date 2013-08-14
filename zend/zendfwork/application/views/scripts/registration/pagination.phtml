@@ -1,0 +1,508 @@
+<style>
+.sp {
+    clear: both;
+    font-family: Arial,Verdana,sans-serif;
+    font-size: 12px;
+    height: auto;
+    margin: 0 0 10px;
+    overflow: hidden;
+    vertical-align: baseline;
+}
+.sp *:focus {
+    outline: 0 none;
+}
+.sp a, .sp span.disabled, .sp span.current {
+    border: 1px solid #DDDDDD;
+    float: left;
+    text-decoration: none;
+}
+.sp a:hover {
+    cursor: pointer;
+}
+.sp_basic a, .sp_basic span.disabled, .sp_basic span.current {
+    color: #333333;
+    display: block;
+    margin: 0 1px 0 0;
+    padding: 6px 5px;
+}
+.sp_basic a:hover {
+    border-color: #CCCCCC;
+    color: #666666;
+}
+.sp_basic span.disabled {
+    border-color: #EEEEEE;
+    color: #AAAAAA;
+}
+.sp_basic span.current {
+    border: 0 none;
+    font-weight: 700;
+    padding: 7px 6px;
+}
+.sp_basic .blue a:hover {
+    border-color: #0088CC;
+}
+.sp_basic .blue span.current {
+    color: #0088CC;
+}
+.sp_basic .cyan a:hover {
+    border-color: #00BBBB;
+}
+.sp_basic .cyan span.current {
+    color: #00BBBB;
+}
+.sp_basic .green a:hover {
+    border-color: #88CC00;
+}
+.sp_basic .green span.current {
+    color: #88CC00;
+}
+.sp_basic .magenta a:hover {
+    border-color: #CC0077;
+}
+.sp_basic .magenta span.current {
+    color: #CC0077;
+}
+.sp_basic .orange a:hover {
+    border-color: #EE7700;
+}
+.sp_basic .orange span.current {
+    color: #EE7700;
+}
+.sp_basic .purple a:hover {
+    border-color: #7700BB;
+}
+.sp_basic .purple span.current {
+    color: #7700BB;
+}
+.sp_basic .red a:hover {
+    border-color: #BB0000;
+}
+.sp_basic .red span.current {
+    color: #BB0000;
+}
+.sp_digg a, .sp_digg span.disabled, .sp_digg span.current {
+    color: #555555;
+    display: block;
+    font-size: 11px;
+    margin: 0 1px 0 0;
+    padding: 6px 5px;
+}
+.sp_digg a {
+    border-color: #AAAADD;
+    color: #2E6AB1;
+}
+.sp_digg a:hover {
+    border-color: #000099;
+}
+.sp_digg span.disabled {
+    border: 0 none;
+    color: #AAAAAA;
+    padding: 7px 6px;
+}
+.sp_digg span.current {
+    background: none repeat scroll 0 0 #2E6AB1;
+    border: 0 none;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 7px 6px;
+}
+.sp_digg .next, .sp_digg .prev {
+    font-weight: 700;
+}
+.sp_digg .blue a {
+    border-color: #A3C0CF;
+    color: #0088CC;
+}
+.sp_digg .blue a:hover {
+    border-color: #0088CC;
+}
+.sp_digg .blue span.current {
+    background: none repeat scroll 0 0 #0088CC;
+}
+.sp_digg .cyan a {
+    border-color: #8FB8FB;
+    color: #00BBBB;
+}
+.sp_digg .cyan a:hover {
+    border-color: #00BBBB;
+}
+.sp_digg .cyan span.current {
+    background: none repeat scroll 0 0 #00BBBB;
+}
+.sp_digg .green a {
+    border-color: #ADBB91;
+    color: #88CC00;
+}
+.sp_digg .green a:hover {
+    border-color: #88CC00;
+}
+.sp_digg .green span.current {
+    background: none repeat scroll 0 0 #88CC00;
+}
+.sp_digg .magenta a {
+    border-color: #B4849F;
+    color: #CC0077;
+}
+.sp_digg .magenta a:hover {
+    border-color: #CC0077;
+}
+.sp_digg .magenta span.current {
+    background: none repeat scroll 0 0 #CC0077;
+}
+.sp_digg .orange a {
+    border-color: #BBA291;
+    color: #EE7700;
+}
+.sp_digg .orange a:hover {
+    border-color: #EE7700;
+}
+.sp_digg .orange span.current {
+    background: none repeat scroll 0 0 #EE7700;
+}
+.sp_digg .purple a {
+    border-color: #BA9BA9;
+    color: #7700BB;
+}
+.sp_digg .purple a:hover {
+    border-color: #7700BB;
+}
+.sp_digg .purple span.current {
+    background: none repeat scroll 0 0 #7700BB;
+}
+.sp_digg .red a {
+    border-color: #C99C9C;
+    color: #BB0000;
+}
+.sp_digg .red a:hover {
+    border-color: #BB0000;
+}
+.sp_digg .red span.current {
+    background: none repeat scroll 0 0 #BB0000;
+}
+.sp_nextprev a, .sp_nextprev span.disabled {
+    color: #333333;
+    display: block;
+    margin: 0 1px 0 0;
+    padding: 6px 10px;
+}
+.sp_nextprev a:hover {
+    border-color: #CCCCCC;
+    color: #666666;
+}
+.sp_nextprev span.disabled {
+    border-color: #EEEEEE;
+    color: #AAAAAA;
+}
+.sp_nextprev .blue a {
+    color: #0088CC;
+}
+.sp_nextprev .blue a:hover {
+    border-color: #0088CC;
+    color: #0088CC;
+}
+.sp_nextprev .cyan a {
+    color: #00BBBB;
+}
+.sp_nextprev .cyan a:hover {
+    border-color: #00BBBB;
+    color: #00BBBB;
+}
+.sp_nextprev .green a {
+    color: #88CC00;
+}
+.sp_nextprev .green a:hover {
+    border-color: #88CC00;
+    color: #88CC00;
+}
+.sp_nextprev .magenta a {
+    color: #CC0077;
+}
+.sp_nextprev .magenta a:hover {
+    border-color: #CC0077;
+    color: #CC0077;
+}
+.sp_nextprev .orange a {
+    color: #EE7700;
+}
+.sp_nextprev .orange a:hover {
+    border-color: #EE7700;
+    color: #EE7700;
+}
+.sp_nextprev .purple a {
+    color: #7700BB;
+}
+.sp_nextprev .purple a:hover {
+    border-color: #7700BB;
+    color: #7700BB;
+}
+.sp_nextprev .red a {
+    color: #BB0000;
+}
+.sp_nextprev .red a:hover {
+    border-color: #BB0000;
+    color: #BB0000;
+}
+.sp .fb a, .sp .fb span {
+    border: 0 none;
+    margin: 0;
+}
+.sp .fb span.current {
+    border-bottom: 2px solid #425596;
+    padding: 5px 6px;
+}
+.sp .fb a:hover {
+    background-color: #425596;
+    color: #FFFFFF;
+}
+.sp .fb span.current {
+    background: none repeat scroll 0 0 transparent;
+    border-color: #425596;
+    color: #425596;
+}
+.sp .fb.blue a:hover {
+    background-color: #0088CC;
+}
+.sp .fb.blue span.current {
+    border-color: #0088CC;
+    color: #0088CC;
+}
+.sp .fb.cyan a:hover {
+    background-color: #00BBBB;
+}
+.sp .fb.cyan span.current {
+    border-color: #00BBBB;
+    color: #00BBBB;
+}
+.sp .fb.green a:hover {
+    background-color: #88CC00;
+}
+.sp .fb.green span.current {
+    border-color: #88CC00;
+    color: #88CC00;
+}
+.sp .fb.magenta a:hover {
+    background-color: #CC0077;
+}
+.sp .fb.magenta span.current {
+    border-color: #CC0077;
+    color: #CC0077;
+}
+.sp .fb.orange a:hover {
+    background-color: #EE7700;
+}
+.sp .fb.orange span.current {
+    border-color: #EE7700;
+    color: #EE7700;
+}
+.sp .fb.purple a:hover {
+    background-color: #7700BB;
+}
+.sp .fb.purple span.current {
+    border-color: #7700BB;
+    color: #7700BB;
+}
+.sp .fb.red a:hover {
+    background-color: #BB0000;
+}
+.sp .fb.red span.current {
+    border-color: #BB0000;
+    color: #BB0000;
+}
+.sp .flickr a {
+    color: #0063DC;
+}
+.sp .flickr a:hover {
+    background: none repeat scroll 0 0 #0063DC;
+    color: #FFFFFF !important;
+}
+.sp .flickr span.current {
+    background: none repeat scroll 0 0 transparent;
+    color: #FF0084;
+    font-weight: 700;
+}
+.sp .flickr a, .sp .flickr span {
+    border: 1px solid #EEEEEE;
+    padding: 2px 6px;
+}
+.sp .flickr.blue a {
+    color: #0088CC;
+}
+.sp .flickr.blue a:hover {
+    background-color: #0088CC;
+}
+.sp .flickr.cyan a {
+    color: #00BBBB;
+}
+.sp .flickr.cyan a:hover {
+    background-color: #00BBBB;
+}
+.sp .flickr.green a {
+    color: #88CC00;
+}
+.sp .flickr.green a:hover {
+    background-color: #88CC00;
+}
+.sp .flickr.magenta a {
+    color: #CC0077;
+}
+.sp .flickr.magenta a:hover {
+    background-color: #CC0077;
+}
+.sp .flickr.orange a {
+    color: #EE7700;
+}
+.sp .flickr.orange a:hover {
+    background-color: #EE7700;
+}
+.sp .flickr.purple a {
+    color: #7700BB;
+}
+.sp .flickr.purple a:hover {
+    background-color: #7700BB;
+}
+.sp .flickr.red a {
+    color: #BB0000;
+}
+.sp .flickr.red a:hover {
+    background-color: #BB0000;
+}
+.sp .fancy a, .sp .fancy span {
+    border-radius: 3px 3px 3px 3px;
+    font-family: Tahoma,"Trebuchet MS",Arial,sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 4px 8px;
+}
+.sp .fancy a {
+    border-color: #F5F5F5;
+    color: #041025;
+}
+.sp .fancy a:hover {
+    background: url("trans.png") repeat-x scroll left bottom #041025;
+    color: #FFFFFF !important;
+}
+.sp .fancy a:focus, .sp .fancy a:active {
+    background-position: 0 0;
+}
+.sp .fancy span.current {
+    background: url("trans.png") repeat-x scroll 0 0 #041025;
+    border: 1px solid #EEEEEE;
+    color: #FFFFFF;
+}
+.sp .fancy.blue span.current {
+    background-color: #0088CC;
+    border-color: #0088CC;
+
+}
+.sp .fancy.blue a {
+    color: #0088CC;
+}
+.sp .fancy.blue a:hover {
+    background-color: #0088CC;
+}
+.sp .fancy.cyan span.current {
+    background-color: #00BBBB;
+    border-color: #00BBBB;
+}
+.sp .fancy.cyan a {
+    color: #00BBBB;
+}
+.sp .fancy.cyan a:hover {
+    background-color: #00BBBB;
+}
+.sp .fancy.green span.current {
+    background-color: #88CC00;
+    border-color: #88CC00;
+}
+.sp .fancy.green a {
+    color: #88CC00;
+}
+.sp .fancy.green a:hover {
+    background-color: #88CC00;
+}
+.sp .fancy.magenta span.current {
+    background-color: #CC0077;
+    border-color: #CC0077;
+}
+.sp .fancy.magenta a {
+    color: #CC0077;
+}
+.sp .fancy.magenta a:hover {
+    background-color: #CC0077;
+}
+.sp .fancy.orange span.current {
+    background-color: #EE7700;
+    border-color: #EE7700;
+}
+.sp .fancy.orange a {
+    color: #EE7700;
+}
+.sp .fancy.orange a:hover {
+    background-color: #EE7700;
+}
+.sp .fancy.purple span.current {
+    background-color: #7700BB;
+    border-color: #7700BB;
+}
+.sp .fancy.purple a {
+    color: #7700BB;
+}
+.sp .fancy.purple a:hover {
+    background-color: #7700BB;
+}
+.sp .fancy.red span.current {
+    background-color: #BB0000;
+    border-color: #BB0000;
+}
+.sp .fancy.red a {
+    color: #BB0000;
+}
+.sp .fancy.red a:hover {
+    background-color: #BB0000;
+}
+</style>
+
+<div class="sp sp_digg en">
+	
+	<div class="flickr ">
+
+		
+		<span class="disabled prev">
+			«&nbsp; Previous		</span>
+		
+				
+				<span class="current">1</span>
+				
+					
+				<a href="/skinnypagination/demo/index.php?array_page=2">2</a>
+				
+					
+				<a href="/skinnypagination/demo/index.php?array_page=3">3</a>
+				
+					
+				<a href="/skinnypagination/demo/index.php?array_page=4">4</a>
+				
+					
+				<a href="/skinnypagination/demo/index.php?array_page=5">5</a>
+				
+					
+				<a href="/skinnypagination/demo/index.php?array_page=6">6</a>
+				
+			
+		<span class="disabled">…</span>		
+		<a href="/skinnypagination/demo/index.php?array_page=12">
+			12		</a>
+		<a href="/skinnypagination/demo/index.php?array_page=13">
+			13		</a>
+
+		
+		<a class="next" href="/skinnypagination/demo/index.php?array_page=2">
+			Next &nbsp;»
+		</a>
+		
+		
+	
+	</div>
+	
+</div>

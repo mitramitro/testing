@@ -1,0 +1,84 @@
+<script>
+function deluser()
+{
+	var con=confirm('Wish you delete this!');
+	if(con){
+			return true;
+		}
+		else{
+			return false;
+		}
+}
+function updateuser()
+{
+	var con=confirm('Wish you update this!');
+	if(con){
+			return true;
+		}
+		else{
+			return false;
+		}
+}
+</script>
+
+<div id="rightpanel">
+ 	<h2><?php 
+	if(isset($this->message['deluser'])){
+				echo $this->message['deluser'];
+		}
+	if(isset($this->message['updateuser'])){
+				echo $this->message['updateuser'];
+		}
+	
+	//$msg=$this->flashMessenger->getMessages();
+				//print_r($msg);
+				//echo $this->flashMessenger('deluser');?>
+				<ul>
+    <?php //echo $this->flashMessenger('notice');?>
+</ul>
+				</h2>
+  <table border="1" width="100%" cellpadding="5" cellspacing="5">
+  
+
+    <tr>
+      <td colspan="5" class="heading">User Management:  </td>
+    </tr>
+    <tr>
+      <td width="100%"><table width="100%" border="0">
+         
+          <tr>
+           
+           	 <td width="20%" class="grey"><strong>Email Address&nbsp;</strong></td>
+         	 <td width="20%" class="grey"><strong>Username&nbsp;</a></strong></td>
+           	 <td width="20%" class="grey"><strong>Gender&nbsp;</strong></td>
+           	 <td width="20%" class="grey"><strong>User Status&nbsp;</a></strong></td>
+         	 <td width="20%" class="grey"><strong>Action</strong></td>
+          </tr>
+		
+          <tr><?php 
+			  $userlist=$this->userlist;
+		   foreach($userlist as $value){
+		    ?>
+            <td width="20%"  align="left"><?php echo $value->email;?></td>
+            <td width="20%"  align="left"><?php echo $value->username;?></td>
+            <td width="20%"  align="left"><?php echo $value->gender;?></td>
+            
+            <td width="20%"  align="left"><a href="<?php echo $this->url(array('controller'=>'adminmain','action'=>'updateuser','id'=>$value->id,'status'=>$value->status));?>" style="text-decoration:none;" onclick="return updateuser()"> <?php echo ucfirst($value->status);?></a> </td>
+           
+            <td width="20%"  align="center"><a href="<?php 
+			echo $this->url(array('controller'=>'adminmain','action'=>'deleteuser','id'=>$value->id
+			));?>" style="text-decoration:none;" onclick="return deluser();">Delete</a></td>
+          </tr>   <?php } ?>
+          
+        
+          
+          <tr >
+                        	<td colspan="8"><center><?php echo $this->paginationControl($this->userlist, 'Sliding', 'pagination.phtml');?></center></td>
+                        </tr>
+      
+                 
+         
+        </table></td>
+    </tr>
+  </table>
+</div>

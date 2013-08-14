@@ -1,0 +1,20 @@
+<?php foreach($this->senderconversation as $con_data){?>
+                         <li>
+                            <?php if($con_data['userfile'] == ''){?>
+                           <img width="40" height="35"  alt="" src="<?php echo $this->baseUrl('images/images.jpg');?>"/>
+                           <?php }else{?>
+                                    <img width="40" height="35"  alt="" src="<?php echo $this->baseUrl('upload/'.$con_data['userfile']);?>"/>
+                           <?php }?>
+                             <span style="color:#000;"><?php echo $con_data['username'];?></span>   
+                            
+                          <div  style="width:400px; height:auto; overflow:hidden;"> 
+                            <?php echo $con_data['message'];?>
+                         </div>   
+                          
+                      </li>
+                 <br/> 
+                 <?php }?>
+                 <?php 
+				 		$sender = Zend_Controller_Front::getInstance()->getRequest()->getParam('sender');
+				 ?>
+                  <input type="hidden" id = "sender" value="<?php echo $sender;?>">

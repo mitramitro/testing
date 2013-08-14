@@ -1,0 +1,192 @@
+body{ margin:0px; padding:0px; font-family:Arial; background:#fafafa; }
+/******header_section start here*********/
+#header_section{background:url(../images/body_bg.png) repeat-x; height:177px;}
+/******header_section ends here*********/
+
+
+.logo_cont{	width:980px;	height:auto;	margin:0 auto;	}
+.top_logo_cont{	width:980px;	height:auto;	float:left;	}
+.logo{	width:315px;	height:71px;	margin-top:43px;	float:left;	}
+.top_choose_lang{	width:476px;	height:auto;	float:right;	}
+.tp-flags{width:360px;	height:30px;	float:left;}	
+.tp-flags h4{	font-family:Verdana, Geneva, sans-serif; font-size:11px;	color:#fff;	text-transform:uppercase; float:left; margin:0px; padding:12px 8px 0 0;
+	font-weight:normal;}	
+.pad-flag{ float:left; padding:9px 5px 0 0;}	
+.create-acc-text{ float:right; width:115px; margin:10px 0 0 0; height:auto; font-size:12px; color:#fff; font-weight:normal;} 
+.create-acc-text a{   font-size:12px; font-weight:normal; color:#007dda; text-decoration:none;}
+.create-acc-text a:hover{   font-size:12px; font-weight:normal; color:#007dda; text-decoration:underline;} 
+
+
+/******header_inner start here******/
+.header_inner{ width:980px; margin:0px auto; padding:5px 0px;}
+.header_inner h1{ float:left; margin:0px; padding:0px; width:270px; height:135px;}
+/******header_inner ends here******/
+
+/******right_header start here******/
+.right_header{ float:right; width:360px;}
+/******right_header ends here******/
+
+/******choose_languages start here******/
+.choose_languages{ padding:5px 0px 20px 0px;}
+.choose_languages_label{ width:120px; float:left; display:block; height:15px; font-size:11px; color:#fff; padding:5px 0px 0px 0px;}
+.choose_languages img{ float:left; margin:0px 0px 0px 2px;}
+/******choose_languages ends here******/
+
+/******login_section start here******/
+.login{ width:228px; font-size:14px; color:#fff; text-align:left; float:right; line-height:18px;}
+.login a{ color:#c60000; text-decoration:none; line-height:18px;}
+.login a:hover{ text-decoration:underline;}
+/******login_section ends here******/
+
+/*****navigation start here******/
+.nav-search-section{ float:left; width:980px; margin:6px 0 0 0; height:40px;}
+/*****navigation ends here******/
+
+/******navi_css start here*****/
+.navi{ float:left; margin:17px 0 0 0; width:645px; font-family:Tahoma, Geneva, sans-serif;}
+.navi ul{ margin:0px; padding:0px; list-style:none;}
+.navi ul li{ float:left; display:block; margin:0px 3px 0px 0px; line-height:35px;}
+.navi ul li a{ float:left; display:block; color:#fff; text-align:center; text-decoration:none; line-height:35px; padding:0px 15px 0px 15px; font-size:14px;}
+
+.navi ul li a:hover{ background:#212121; float:left; display:block; color:#fff; text-align:center; text-decoration:none; line-height:35px; padding:0px 15px 0px 15px;
+ font-size:14px;}
+/********search_section start here********/
+.search-pennel{ float:right; width:263px; margin:50px 0 0 0; height:35px; }
+.input-search{ float:left;background:#fff;margin:2px 0 0 0;width:199px;height:27px;padding:0 5px 0 5px;border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;
+-webkit-border-radius:4px;outline:none;border:1px solid #ccc;box-shadow: 1px 1px 7px #f0f0f0;-moz-box-shadow: 1px 1px 7px #f0f0f0; -o-box-shadow: 1px 1px 7px #f0f0f0;
+-webkit-box-shadow: 1px 1px 7px #f0f0f0;}
+.search-top-btn{ float:left; background:url(../images/search-btn.png) no-repeat; margin:0 0 0 5px; width:35px; height:32px; border:none; outline:none; cursor:pointer;}
+/********search_section ends here********/
+
+/*****socail_icon start here*****/
+.socail_icon{ float:right; padding:5px 0px;}
+/*****socail_icon ends here*****/
+
+/*****main_panel start here*****/
+#main_panel{ width:980px; margin:0px auto;}
+/*****main_panel ends here*****/
+
+/******left_panel start here*******/
+.left_panel{ width:713px; float:left; margin:0px 13px 0px 0px;}
+/******left_panel ends here*******/
+
+/******right_panel start here*******/
+.right_panel{ width:250px; float:right;}
+.right_banner{ margin:0px 0px 7px 0px; width:250px;}
+/******right_panel ends here*******/
+
+/******clear_fix start here*********/
+.clear{ clear:both; font-size:1px; line-height:1px;}
+/******clear_fix ends here*********/
+.best_poker_pennel{ float:left; width:250px; height:auto; border:1px solid #bbbbbb; background:#fff; margin:0px 0px 7px 0px;}
+	
+.best_poker_pennel h1{ float:left; margin:0;  width:240px; padding:10px 0 0 10px; text-transform:uppercase; font-weight:bold;font-family:"Century Gothic"; font-size:15px; 
+color:#0972b4; height:29px;}	
+
+.best_poker_pennel h2{ background:#c60000; float:left; height:19px; margin:0; padding:5px 0 0 10px; width:240px; color:#fff; font-family:Arial, Helvetica, sans-serif; font-weight:none; font-size:12px;}
+.best_poker_pennel h2 span{ float:right; margin: 0 30px 0 0;	}
+.down_cont{float:left; width:245px; margin-left:5px; height:auto; padding:2px 0 2px 0; border-bottom:1px dashed #515151;}
+.inner_left{float:left; width:55px; }
+.inner_left h3{font-size:12px; margin:0; padding:8px 0 0 0; color:#b50d0d; float:left;}
+.inner_left img{float:right; margin-top:4px;}
+.text_c{float:left; margin:8px 0 0 5px; width:108px; font-family:Arial, Helvetica, sans-serif; height:auto; font-size:12px; color:#515151;}
+.rev{float:right; width:75px; margin:8px 0 0 0; height:auto;}
+.top_games_text{float:right; margin-right:5px; width:165px; color:#000; height:auto;}
+.top_games_text h3{ font-family: "Century Gothic"; margin:0; padding:0; font-size:14px; color:#9e0a0a; font-weight:normal; text-transform:uppercase;}
+
+.top_games_text p{float:left; margin:0; padding:5px 0 0 0; color:#000; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+.red_txt{ float:right;text-decoration:none; margin:5px 0 0 0; font-family:"Century Gothic"; font-size:13px; font-weight:bold; color:#ac0707;} 
+.twist_cont{	width:713px;	height:auto;	float:left; background:#fff; border:1px solid #bbb; margin:0px 0px 7px 0px;	}
+.twist_cont p{	font-size:12px;	font-weight:normal;	color:#090506;	margin:0px;	padding:9px 10px; line-height:18px;}
+.twist_cont p span{ color:#c60000;}
+
+.twist_cont h2{	height:30px;		font-family:"Century Gothic";	font-size:15px;	font-weight:bold;	color:#0972b4;	
+line-height:34px;	margin:0px;	padding:5px 0 0 10px;	text-transform:uppercase;	}
+
+.twist_cont h3{	height:30px;		font-family:"Century Gothic";	font-size:15px;	font-weight:normal;	color:#a10909;	
+line-height:34px;	margin:0px;	padding:0 0 0 10px;	text-transform:uppercase;	}
+.twist_blog{	width:688px;	height:auto;	float:left;	padding:6px 10px; border-bottom: 1px dashed #3C3C3C;	}
+.twist_blog_no-border{	width:693px;	height:auto;	float:left;	padding:6px 10px;}
+.round_arrow{	width:33px;	height:27px;	float:left;	}
+.round_arrow_2{	width:33px;	height:27px;	float:right;	}
+.twist_casino{	width:633px;	height:auto;	float:left;	margin-left:20px;	}
+.twist_casino h3{font-family:"Century Gothic";	font-size:14px;	font-weight:normal;	color:#FFF;	margin:0px;	padding:0px 0 0 0px; color:#b20606; text-transform:uppercase;}
+.twist_casino p{font-size:12px;	font-weight:normal;	color:#000000;	line-height:18px;	margin:0px; padding:10px 0 10px 0;	}
+.twist_casino h4{font-size:12px;	font-weight:normal;	color:#a30909;	margin:0px;	padding:0px 0 0 0px; float:left;}
+.check_ads{margin:0px 0px 7px 0px; width:713px;}
+.down_con2{float:left; width:245px; margin-left:5px; height:auto; padding:7px 0 7px 0; border-bottom:1px dashed #515151;}
+.view_all{ font-size:13px; color:#c60000; text-align:right; font-family:"Century Gothic"; }
+.view_all a{ font-size:14px; color:#9E0A0A; text-decoration:none; padding:5px 10px; display:block; font-family:"Century Gothic";}
+.view_all a:hover{ text-decoration:underline;}
+
+/******footer css start here**********/
+.footer_cont{	width:100%;	height:197px; background:url(../images/footer_bg.png) repeat-x; clear:both;}
+.footer{	width:1002px;	height:141px;	margin:auto;	}
+.footer-continn{ float:left;  width:987px; margin:18px 0 0 10px;}
+.footer-down-cont{float:left;  width:980px; margin:10px 0 0 10px;}
+.footer-links-pennel{ float:left; width:138px; height:auto; font-size:12px; 0 font-weight:normal; border-right:1px solid #959494;}
+.footer-links-pennel2{ float:left; width:138px; height:auto; font-size:12px; margin:0 0 0 30px; font-weight:normal; border-right:1px solid #959494;}
+.footer-contact{ float:left; width:200px; height:auto; font-size:12px; margin:0 0 0 30px; font-weight:normal;  color:#0972b4; line-height:25px; }
+.footer-lnk{ float:left; width:84px; height:auto;}
+.footer-lnk ul{ margin:0; padding:0;}
+.footer-lnk ul li{ float:left; list-style:none; line-height:16px; display:block;}
+.footer-lnk ul li a{ float:left; list-style:none; line-height:16px; padding:6px 0 6px 0; color:#0972b4; display:block; text-decoration:none;}	
+.footer-lnk ul li a:hover{ float:left; list-style:none; line-height:16px; padding:6px 0 6px 0; color:#0972b4; display:block; text-decoration:underline;}
+.newsletter-pennel{ float:right; width:315px; height:85px; background:#0972b4; margin:0 5px 0 0; padding:7px;}
+.newsletter-inner{float:left; width:315px; height:85px; background:#d8d7d7; }
+.newsletter-inner h2{ margin:0; padding:5px 0 0 10px; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; color:#000;}
+.input-btn{ float:left; width:300px; height:auto;  margin:10px 0 0 10px;}
+.input-email{ float:left; width:203px; height:30px; border:none; outline:none; background:#fff;}
+.subscribe{float:left; padding:3px 5px 6px 3px; height:32px; border:none; outline:none; background:#c60000; color:#fff; cursor:pointer; }
+.subscribe:hover{float:left; padding:3px 5px 6px 3px; height:32px; border:none; outline:none; background:#9b0808; color:#fff; cursor:pointer; }
+.copyright-pennel{ float:left; width:987px; margin:0 0 0 10px; height:48px; }
+.facebook-icons{ float:right; width:300px; height:48px;}
+.icon1{ float:left; width:48px; height:48px; border:none; margin:0 0 0 6px;}
+.copyright-text{ float:left; width:197px; margin:25px 0 0 0; color:#565555; font-size:12px; font-weight:normal;}
+.copyright-text a{  color:#565555; text-decoration:none;}	
+.copyright-text a:hover{  color:#565555; text-decoration:underline;}
+/******footer css ends here**********/
+.tab-section{float:left; width:707px; font-size:12px; color:#000;}
+.bonus-select{ float:left; width:300px; height:20px; border:1px solid #bbbbbb; margin:10px 0 0 0;}
+.apply-btn{ float:right; width:110px; padding:5px 3px 5px 6px; margin:5px 10px 5px 0; color:#FFF; border:2px solid #960505; background:#c10303; cursor:pointer;}
+.apply-btn:hover{ float:right; width:110px; padding:5px 3px 5px 6px; margin:5px 10px 5px 0; color:#FFF; border:2px solid #960505; background:#a00505; cursor:pointer;}
+.top-casino-table-new{ float:left; width:694px; height:auto; margin:5px 0 10px 10px; font-size:12px ;}
+.top-casino-table-new a{ color:#c7251e; text-decoration:none; }
+.top-casino-table-new table{ }
+.top-casino-table-new table tr td{ border-bottom:1px solid #b7b7b7;  }
+.hov-tab{ background:#fff;}
+.hov-tab:hover{ background:#ffffd1;}
+.star-smll{ float:left; width:13px; height:16px; margin:0 0 0 0; }
+.go-btn{ float:left; background:url(../images/go-btn.png) no-repeat; width:28px; height:18px; cursor:pointer; outline:none; border:none;}
+.playnw-btn{ float:left; width:68px; padding:4px 0 4px 0; font-size:12px; background:#1359a1; cursor:pointer; color:#fff; border:1px solid #09335e;}
+.playnw-btn:hover{ float:left; width:68px; padding:4px 0 4px 0; font-size:12px; background:#0c3e71; cursor:pointer; color:#fff; border:1px solid #09335e;}
+.casino-text{ float:left;}
+.bonus-img{ float:left; margin:0 0 0 10px;}
+.all-slots-pennel{ float:left; width:690px; margin:5px 0 0 10px; height:auto; font-size:13px;}
+.slot-img{ float:left; width:133px; height:115px; border:1px solid #aeadad;}
+.grey-p-text{ float:left; margin:0 0 10px 10px; width:520px; color:#535252; height:auto; padding:10px;  border:1px solid #aeadad; background:#f3f3f3;}
+.grey-p-text a{ text-decoration:none; color:#a60808;}
+.blk-bg-head{ float:left; background:url(../images/blk.jpg) repeat-x; margin:10px 0 10px 0; padding:7px 0 0 0; width:713px; height:29px; color:#fff; font-size:15px;
+ font-weight:bold; font-family:"Century Gothic"; text-align:center;}
+.blk-bg-head a{ color:#fff; text-decoration:none;}
+.blk-bg-head a:hover{ color:#fff; text-decoration:underline;}
+.visit-casino{ float:left; width:198px; height:auto; margin:0 0 10px 115px; text-align:center; font-size:20px; font-family:"Century Gothic"; font-weight:bold; color:#a60808; }
+.visit-img{ float:left; width:52px; height:51px;}
+.visit-cas-txt{ float:left; margin:10px 0 0 10px; }
+.visit-cas-txt a{ color:#a60808; text-decoration:none; }
+.review-pennel{ float:left; width:690px; height:auto; margin:10px 0 10px 10px; border-bottom:1px dashed #bbbbbb; }
+.review-txt{ float:left; width:480px; height:20px;}
+.review-txt p{ margin:10px 0 0 0; padding:0; line-height:18px; font-size:12px; color:#000;}
+.readmore{ font-weight:bold; color:#bb0404; text-decoration:none;}
+.head-rev{ float:left; width:auto; font-family:"Century Gothic"; font-size:15px; font-weight:normal; color:#a10909;}
+.stars{ float:left; width:69px; margin:0 0 0 10px;}
+.comment-sec{ float:left; width:156px; margin:5px 0 0 10px; color:#535252; font-size:11px;}
+.comment-sec span{  color:#c60000; font-size:11px;}
+.review-img{ float:left; width:199px; height:144px; margin:0 0 10px 10px;}
+.comment-pennel-grey-bottom{float:left; width:670px; background:#f3f3f3; font-size:13px; padding:10px; margin:10px 0 10px 10px; height:auto; 
+border:1px solid #b2b1b1; color:#535252;}
+.input-title{ float:left; border:1px solid #b2b1b1; width:562px; padding:5px;}
+.input-select-n{ float:left; border:1px solid #b2b1b1; width:562px; resize:none; padding:5px; height:120px;}
+.post-comment-btn{ float:right; width:142px; padding:5px 3px 5px 6px; margin:5px 10px 5px 0; color:#FFF; border:2px solid #960505; background:#c10303; cursor:pointer;}
+.post-comment-btn:hover{ float:right; width:142px; padding:5px 3px 5px 6px; margin:5px 10px 5px 0; color:#FFF; border:2px solid #960505; background:#a00505; cursor:pointer;}	
+

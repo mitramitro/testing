@@ -1,0 +1,35 @@
+<?php 
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");?>
+<div class="login_box">
+ <div class="user_cont">
+<div id="cperror" style="color:red;height:20px;font-size:14px;width:500px;"><?php  
+echo $this->message['error1'];?></div>
+<?php 
+
+		$this->form->setAction($this->url());
+		echo $this->form->getDecorator('Form')->setElement($this->form)->render(false);
+		//echo $this->form->SetLabel('Username Testing');
+	
+?>
+        <h2>User Name :</h2>
+       <?php echo $this->form->getElement('username');?>
+                     <div id="usererror" style="color:red;height:20px;font-size:14px;margin-left: 194px;
+    width: 250px;"></div>
+ 
+        <div class="clr" style="height:10px;"></div>
+        <h2>Password :</h2>
+       <?php echo $this->form->getElement('password');?>
+        <div id="perror" style="color:red;height:20px;font-size:14px;width:500px;"></div>
+        
+       
+       
+       <div class="clr" style="height:2px;"></div>
+      <?php 
+	  			$this->form->submit->setLabel('Login');
+	 			 echo $this->form->getElement('submit');?>
+      
+    <!-- </form>-->
+     </div>
+</div>

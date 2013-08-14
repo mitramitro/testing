@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata>
+    <nav>
+	
+        <label>Home</label>
+        <controller>registration</controller>
+        <action>index</action>
+		<resource>Home</resource>
+
+    </nav>
+</configdata>

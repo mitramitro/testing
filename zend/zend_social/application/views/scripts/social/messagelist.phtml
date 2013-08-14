@@ -1,0 +1,67 @@
+ <article class="col1">
+            <div class="pad_left1">
+           
+			
+              <h2 class="pad_bot1">All Messages&nbsp;<u><?php //echo $value['username'];?></u></h2>
+            </div>
+            
+            <div style=" margin-top:-8px;">
+            <?php   //$this->fileform->setAction($this->url());
+					//echo $this->fileform;
+			?>
+            </div><br/>
+            <div class="pad_left1">
+              <div class="box2">
+              
+                <div class="wrapper">
+                
+                  <div class="cols">
+                  	<span id="umsg" style="color: #F00"><?php //echo $this->message['update'];?></span>
+                    <ul class="list3">
+                    <?php if(count($this->data)==0)
+					{
+						echo "No Record Found..";
+					}
+					?>
+                     <?php foreach($this->data as $value){
+					?>
+                     <li>
+              <?php if($value['userfile'] == ''){?>
+             	 <img width="66" height="69"  alt="" src="<?php echo $this->baseUrl('images/images.jpg');?>"/>
+              <?php }else{?>
+              			<img width="66" height="69"  alt="" src="<?php echo $this->baseUrl('upload/'.$value['userfile']);?>"/>
+              <?php }?>
+              
+                <span style="color:#000;"><?php echo $value['username'];?> </span>
+             
+			 <br/>
+              <div  style="width:400px; height:auto; overflow:hidden;"> 
+                            <?php echo $value['message'];?>
+                            <?php if($value['message_status'] == 'active'){?>
+                            <div style=" background-color:#03F;
+                                                                border-radius: 10px 10px 10px 10px;
+                                                                float: right;
+                                                                height: 10px;
+                                                                width: 10px;"></div>
+                           <?php }?>
+                     </div>
+		    	
+			    <a href="<?php echo $this->baseUrl('social/conversation/sender/'.$value['sender']);?>">Reply</a>
+              	
+			  
+              </li><br/>
+              <?php }?>  
+              
+                     
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+            
+            </div>
+            <?php //}?>
+            </article>
+            
+       
+     

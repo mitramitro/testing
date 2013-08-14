@@ -1,0 +1,116 @@
+ <?php 
+				 		$sender = Zend_Controller_Front::getInstance()->getRequest()->getParam('sender');
+				 ?>
+ 
+ <script>
+var auto_refresh = setInterval(
+function ()
+{
+$('#con_message').load('<?php echo $this->baseUrl('social/refreshcoversation/sender/'.$sender);?>');
+}, 1000);
+
+ 	$(document).ready(function(){
+		$("#con_reply").click(function(){
+			var sender = $("#sender").val();
+			var message = $("#messagebox").val();
+			if(message != ''){
+			//alert(sender);
+				$.get("<?php echo $this->baseUrl('social/ajaxconversation');?>",{ sender:sender, message : message },function(success){
+						$("#con_message").html(success)
+				});
+			}
+			  });
+			
+		});
+ </script>
+ 
+ <article class="col1">
+            <div class="pad_left1">
+           
+			
+              <h2 class="pad_bot1">All Messages&nbsp;<u><?php //echo $value['username'];?></u></h2>
+            </div>
+            
+            <div style=" margin-top:-8px;">
+            <?php   //$this->fileform->setAction($this->url());
+					//echo $this->fileform;
+			?>
+            </div><br/>
+            <div class="pad_left1">
+              <div class="box2">
+              
+                <div class="wrapper">
+                
+                  <div class="cols">
+                  	<span id="umsg" style="color: #F00"><?php //echo $this->message['update'];?></span>
+                    <ul class="list3">
+                    <div class="con_message" id="con_message">
+						<?php foreach($this->senderconversation as $con_data){?>
+                         <li>
+                            <?php if($con_data['userfile'] == ''){?>
+                           <img width="40" height="35"  alt="" src="<?php echo $this->baseUrl('images/images.jpg');?>"/>
+                           <?php }else{?>
+                                    <img width="40" height="35"  alt="" src="<?php echo $this->baseUrl('upload/'.$con_data['userfile']);?>"/>
+                           <?php }?>
+                             <span style="color:#000;"><?php echo $con_data['username'];?></span>   
+                            
+                          <div  style="width:400px; height:auto; overflow:hidden;"> 
+                            <?php echo $con_data['message'];?>
+                         </div>   
+                          
+                      </li>
+                 <br/> 
+                 <?php }?>
+                 
+                  <input type="hidden" id = "sender" value="<?php echo $sender;?>">
+                 </div>
+                 <div class="chatuserdiv">
+                 	<div class="chatuserheading">
+                    	Chat Users
+                    </div>
+                    <div class="chatusers">
+                    	<?php foreach($this->data as $co_data){?>
+                         <li>
+                            <?php if($co_data['userfile'] == ''){?>
+                           <a href="<?php echo $this->baseUrl('social/conversation/sender/'.$co_data['sender']);?>"><img width="40" height="35"  alt="" src="<?php echo $this->baseUrl('images/images.jpg');?>"/></a>
+                           <?php }else{?>
+                                    <a class="chatuserimage" href="<?php echo $this->baseUrl('social/conversation/sender/'.$co_data['sender']);?>"><img width="40" height="35"  alt="" src="<?php echo $this->baseUrl('upload/'.$co_data['userfile']);?>"/></a>
+                           <?php }?>
+                             <span style="color:#000;"><?php echo $co_data['username'];?></span>   
+                            
+                          
+                          
+                      </li>
+                 <br/> 
+                 <?php }?>
+                    </div>
+                 </div>
+                  <li><div class="chat">
+                   <div style="height: 140px;
+                                            margin-left: 14px;
+                                            
+                                            width: 300px;
+                                            ">
+                                            
+                  	<textarea name="message" class="messagebox" id="messagebox"></textarea>
+                    <?php //echo $this->test.'1';?>
+                    <br/>
+                 	 <a href="javascript:void(0)" id="con_reply">Reply</a>         
+                     </div>
+                  </div>
+                 
+                  </li>
+                
+                     
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+            
+            </div>
+            <?php //}?>
+            </article>
+            
+       
+     

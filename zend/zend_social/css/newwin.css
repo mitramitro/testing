@@ -1,0 +1,638 @@
+/*----Grey----*/
+A.btn, A.btn_disabled, A.itBtn, A.iBtn16, A.TextBtn, A.TextBtn_disabled {
+font: 11px/2.0em verdana;color:#222;text-decoration: none;text-align:center;
+display:inline;vertical-align:baseline;margin-left:3px;padding:3px;Border:1px solid #666;
+overflow:hidden;cursor:pointer;}
+
+/*--ROLLOVER CODE--*/
+A.btn, A.btn_disabled, A.itBtn, A.iBtn16, A.TextBtn, A.TextBtn_disabled {background: url(/img/bg-grygrad.gif) 0px 0px repeat-x;background-color:#D3D3D3;}
+A.btn:hover, A.btn_disabled:hover, A.itBtn:hover, A.iBtn16:Hover, A.TextBtn:hover{background: url(/img/bg-grygrad.gif) 0px -20px repeat-x;background-color:#F3F3F3;}
+
+A.btn_disabled {color:#999; Border:1px solid #ccc;}
+A.TextBtn_disabled{color:#aaa; border:1px solid #aaa;}
+
+A.btn {display: block;height: 18px;}
+A.itBtn, A.iBtn16{display:block;Border:1px solid #666;}
+/*---------icon buttn-icon 46 wide px----------------*/
+A.itBtn {width:48px;height:16px;font-size:16px; padding:2px;padding-top:3px;}
+html>body A.itBtn {height: auto;}
+/*---------icon buttn-icon 16px----------------*/
+A.iBtn16 {width:16px;height:16px;padding:3px;}
+html>body A.iBtn16 {height: auto;}
+
+/*-------Blue buttons-------*/
+input.TextBtnBlue, A.TextBtnBlue {font: 11px/2.0em verdana;color:#222;text-decoration: none;text-align:center;
+display:inline;vertical-align:baseline;margin-left:3px;padding:3px;Border:1px solid #333;
+overflow:hidden;cursor:pointer;}
+
+/*--ROLLOVER CODE--*/
+input.TextBtnBlue, A.TextBtnBlue {background: url(img/bg-ltbluegrad.gif) 0px 0px repeat-x;background-color:#D3D3D3;}
+input.TextBtnBlue:hover, A.TextBtnBlue:hover {background: url(/img/bg-ltbluegrad.gif) 0px -70px repeat-x;background-color:#F3F3F3;}
+
+
+/*--------------------------------------Orange buttons--------------------------*/
+input.TextBtnOrange, A.TextBtnOrange {font: 11px/2.0em verdana;color:#222;text-decoration: none;text-align:center;
+display:inline;vertical-align:baseline;margin-left:3px;padding:3px;Border:1px solid #666;overflow:hidden;cursor:pointer;}
+
+/*--ROLLOVER CODE--*/
+input.TextBtnOrange, A.TextBtnOrange {background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/bg-orangegrad.gif) 0px 0px repeat-x;background-color:#D3D3D3;}
+input.TextBtnOrange:hover, A.TextBtnOrange:hover {background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/bg-orangegrad.gif) 0px -70px repeat-x;background-color:#F3F3F3;}
+input.TextBtnOrange:active, A.TextBtnOrange:active {background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/bg-orangegrad.gif) 0px -70px repeat-x;background-color:#DDDDDD;}
+
+/*---------------INPUT buttons based on TextBtn look and feel-----------------------------*/
+input.btn {margin-bottom:3px;border:solid 1px #666;font-size:100%;font: 11px/1.4em  Verdana, Arial, Helvetica, sans-serif;background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/bg-grygrad.gif) 0px 0px repeat-x; color:#222;vertical-align:middle;}
+html>body input.btn, input.btn_disabled{padding:2px 3px 2px 3px; }
+input.btn_disabled {margin-bottom:3px;Border:solid 1px #aaa;font-size:100%;font: 11px/1.4em  Verdana, Arial, Helvetica, sans-serif;background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/bg-grygrad.gif) 0px 0px repeat-x; color:#999;vertical-align:middle;}
+
+/*--+++++++++++++++++++++++++++++++++++BUTTTONS++++++++++++++++++++++++++++++++++++--*/
+
+
+/***************** TABS  *****************/
+/**     using a 3 leve deep tab angle   **/
+/*****************************************/
+#NavTabs {background:#000;padding-right:10px;}
+#NavTabs ul {float:right;margin:0; padding:0; list-style-type:none; background:transparent;white-space:nowrap}
+#NavTabs li {display:block; float:left;padding-left:3px;width:135px;position:relative;bottom:-1px;font-weight:bold;}
+
+/*--3px angle tab style--*/
+.ttop {display:block; background:transparent; font-size:1px;overflow:hidden;}
+.tbtm {display:block; background:transparent; font-size:1px;height:1px;overflow:hidden;}
+
+.nTab {background: transparent;}
+.nTab .p3_B1, .nTab .p3_B2 {height:1px;}
+.nTab .nTabTitle {display:block; font-family:verdana; color:#000;text-align:center; background-color:#5781B9; }
+
+/*--Color the borders*/
+.nTab .nTabTitle, .nTab .p3_B2, .nTab .p3_B3{border-left:1px solid #3C6090; border-right:1px solid #3C6090;}
+.nTab .p3_B1{background:#222256;}
+.nTab .tbtm {background-color:#3C6090;}
+
+/*--change this for color update*/
+.nTab .p3_B2, .nTab .p3_B3, .nTab .nTabTitle{background-color:#eeeeee;background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/bg-ltbluegrad.gif) 0px 0px repeat-x;}
+
+/*--Rollover*/
+a.nTab, a.nTab_on, a.nTab:visited {display:block; text-decoration:none;}
+a.nTab:hover {background:transparent; cursor:pointer;}
+
+a.nTab:hover .nTabTitle {color:#000;}
+a.nTab:hover .nTabTitle, a.nTab:hover .p3_B2, a.nTab:hover .p3_B3 {background-color:#E6E8FF;background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/bg-lt-orangegrad.gif) 0px 0px repeat-x;}
+
+/*--on state--*/
+a.nTab_on .nTabTitle {color:#000;}
+a.nTab_on .nTabTitle, a.nTab_on  .p3_B2, a.nTab_on  .p3_B3 {background-color:#A4C6FF;background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/bg-bluegrad.gif) 0px 0px repeat-x;}
+a.nTab_on .tbtm {background-color:#A4C6FF;}
+
+
+/*--survey topbar--*/
+#SurveyBar {background:#e9e9e9; padding-top:2px;padding-left:10px;}
+#SurveyBar .p4_B1, #SurveyBar .p4_B2, #SurveyBar .p4_B3, #SurveyBar .p4_B4, #SurveyBar .xContent
+{background-color:#e9e9e9;}
+
+
+/*--Survey tab code--*/
+TABLE.SurveyHdr {background:transparent;padding:2px;padding-bottom:0px;}
+TABLE.SurveyHdr TD.GridParam {color:#000;vertical-align:text-top;text-align:right;white-space:nowrap;}
+.SurveyTitle {font-size: 13px; color: #000; font-weight: bold; padding-left: 5px;}
+.sm_hdr{font-size:11px;color:#333;letter-spacing: 2px;}
+.sm_col_hdr{font-size:11px;color:#333;letter-spacing: 2px;line-height:16px}
+.sm_hdr_link{font-family:Verdana;font-weight:bold;font-size:10px;}
+
+
+A.ListBtn,A.ListBtn_on,A.ListBtn_off {font: 12px/1.9 verdana;border:1px solid #000;border-left:0px;padding:1px 6px 1px 6px;text-decoration:none;}
+A.ListBtn {background-color:#FFF;color:#333}
+A.ListBtn_on {background-color:#3c6090;color:#FFF;font-weight:bold;}
+A.ListBtn_off {background-color:#ccc;color:#EEE;}
+
+A.ListBtn:hover {background-color:#8fc5e5;color:#FFF;}
+html>body A.ListBtn,A.ListBtn_on,A.ListBtn_off {width: auto;height: auto;}
+/*-------------Survey grid code--------------*/
+
+tr.disabled td, tr.disabled a { font-style: italic; color: #aaaaaa; }
+.ArchiveInProgress, .Archived, .RestoreInProgress { font-weight: bold; font-style: normal; padding-right: 8px; }
+
+
+/****************  Menu  *****************/
+/**     using a 3 leve deep tab angle   **/
+/*****************************************/
+
+/*--containers for content--*/
+.LeftMenuBar {background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/sidebar-grad.jpg) 0px 0px repeat-y; background-color: #a4c6ff; }
+.LMenuItem {margin: 5px 0px 15px 5px;}
+.LMenuItemTitle {padding:2px 0px;margin-bottom:5px;border-bottom: solid 1px #888;font-weight: bold; font-size: 14px; color: #111}
+
+.LNav, .LNav_on {background:none;margin:0px;display:block;padding:5px 0px;}
+.LNav a, .LNav_on a {text-decoration:none;color:#000;display:block;}
+
+.LN_title {padding:0 0 1px 0;background:url(/img/bg-ltbluegrad.gif) 0px 0px repeat-x;background-color:#FFFFFF;font-size:12px;font-weight:bold;white-space:nowrap;}
+.LN_title a {padding:2px 2px 2px 5px;}
+.LN_title img {vertical-align:middle;}
+
+.LN_t, .LN_b {display:block;background:transparent;font-size:1px;}
+.LN_data {background:#ABC6EB;color:#183154;}
+
+.LNB1,.LNB2,.LNB3 {display:block;overflow:hidden;height:1px;}
+.LN_data,.LNB2,.LNB3 {border-style:solid;border-color:#7387af;border-width:0 1px;}
+.LNB2, .LNB3 {background:#ABC6EB;}
+.LNB1 {margin:0 3px; background:#7387AF;}
+.LNB2 {margin:0 2px; border-width:0 1px;}
+.LNB3 {margin:0 1px;}
+.LN_t .LNB2, .LN_t .LNB3 {background:#DEE9F7;}
+
+/*--Menu Rollover trick--*/
+.LNav:hover b b,
+.LNav:hover .LN_data,
+.InfoBarLeft div.hover b.LN_t b,
+.InfoBarLeft div.hover b.LN_b b,
+.InfoBarLeft div.hover .LN_data {border-color:#000;}
+.LNav:hover .LNB1,
+.InfoBarLeft div.hover .LNB1 {background-color:#000;}
+.LNav:hover .LN_title,
+.InfoBarLeft div.hover .LN_title {background-color:#dee9f7;background-position:0 5px;} 
+
+
+/*--Menu "on" code--*/
+.LNav_on .LN_data {background:#fdf0bd;border-color:#000;}
+.LNav_on .LN_data .LN_title {background:#fdf0bd url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/bg-lt-orangegrad.gif) 0px 0px repeat-x;}
+.LNav_on .LNB1,
+.LNav_on .LNB2,
+.LNav_on .LNB3 {background:#000;border-color:#000;}
+.LNav_on .LN_t .LNB2,
+.LNav_on .LN_t .LNB3 {background:#fdf0bd;}
+.LNav_on .LN_b .LNB2,
+.LNav_on .LN_b .LNB3 {background:#fbdc94;}
+/***************************************/
+
+
+/*--based on snazzy corners [http://www.stunicholls.myby.co.uk/boxes/snazzy.html]--*/
+/*--4px angle tab style--*/
+.p4_B1, .p4_B2, .p4_B3, .p4_B4 {display:block; overflow:hidden;height:1px;}
+.p4_B2, .p4_B3, .p4_B4 {border-width:0 1px;}
+.p4_B1 {margin:0 4px;}
+.p4_B2 {margin:0 3px;}
+.p4_B3 {margin:0 2px;}
+.p4_B4 {margin:0 1px;}
+
+
+/*--3px angle tab style--*/
+.p3_B1, .p3_B2, .p3_B3 {display:block; overflow:hidden;height:1px;font-size:1px;}
+.p3_B2, .p3_B3 {border-width:0 1px;}
+.p3_B1 {margin:0 3px;}
+.p3_B2 {margin:0 2px;}
+.p3_B3 {margin:0 1px;}
+
+
+/*-INFOBARS-*/
+.xcap {display:block; background:transparent; font-size:1px;}
+
+.InfoWarn {background: transparent; margin:0px;}
+.InfoWarnTitle {color:#000; border-bottom:1px solid #eec600;font-weight:bold;font-size:14px;padding-left:5px;Margin-bottom:4px;}
+/*--change this for color update*/
+.InfoWarn .p3_B1, .InfoWarn .p3_B2, .InfoWarn .p3_B3{background-color:#ffffaa;}
+.InfoWarn .p3_B1, .InfoWarn .p3_B2{height:1px;}
+/*--Color the borders*/
+.InfoWarnContent, .InfoWarn .p3_B2, .InfoWarn .p3_B3{border-left:1px solid #eec600; border-right:1px solid #eec600;}
+.InfoWarn .p3_B1,.InfoWarn .p4_B1{background:#eec600;}
+.InfoWarnContent {Padding:5px;background-color:#ffffaa;Color:#000;text-align:left;}
+/*IE6 hack*/
+* html .InfoWarnContent {height:0px;}
+
+
+
+.xInfo {background: transparent; margin:0px;}
+.xInfoTitle {color:#000; border-bottom:1px solid #eec600;font-weight:bold;font-size:14px;padding-left:5px;Margin-bottom:4px;}
+/*--change this for color update*/
+.xInfo .p4_B1, .xInfo .p4_B2, .xInfo .p4_B3, .xInfo .p4_B4 {background-color:#FFF;}
+.xInfo .p4_B1, .xInfo .p4_B2, .xInfo .p4_B3 {height:1px;margin-right:0px;}
+.xInfo .p4_B4 {margin-right:0px;}
+/*--Color the borders*/
+.xInfo .p4_B2, .xInfo .p4_B3, .xInfo .p4_B4 {border-left:1px solid #3C6090; border-right:0px solid #3C6090;}
+.xInfo .p4_B1{background:#3C6090;}
+
+.xInfoContent,.xEditInfoContent,.xInfoContentAcct {background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/content_shadow.gif) 0px 0px repeat-x;
+	border-left:1px solid #3C6090;border-top:1px solid #3C6090;
+	Padding:10px;Padding-top:12px;background-color:#FFF;
+	}
+.xEditInfoContent{margin-left:175px;}
+.xInfoContentAcct{background-image:none;border-top:none;}
+/*IE6 hack*/
+* html .xInfoContent {height:0px;}
+
+
+
+
+/*--change this for color update*/
+.InfoBlue .p3_B1, .InfoBlue .p3_B2, .InfoBlue .p3_B3,.InfoBlue .xContent {background-color:#DEE9F7;}
+.InfoBlue .p3_B1, .InfoBlue .p3_B2{height:1px;}
+/*--Color the borders*/
+.InfoBlueContent, .InfoBlue .p3_B2, .InfoBlue .p3_B3,.InfoBlue .xContent {border-left:1px solid #6197CE; border-right:1px solid #6197CE;}
+.InfoBlue .p3_B1,.InfoBlue .p4_B1{background:#6197CE;}
+.InfoBlueContent {Padding:5px;background-color:#DEE9F7;Color:#000;text-align:left;}
+.InfoBlueTitle {color:#3C6090; border-bottom:1px solid #3C6090;font-weight:bold;font-size:13px;padding-left:5px;Margin-bottom:4px;}
+/*IE6 hack*/
+* html .InfoBlueContent {height:0px;}
+
+/*--change this for color update*/
+.InfoGreen .p3_B1, .InfoGreen .p3_B2, .InfoGreen .p3_B3,.InfoGreen .xContent {background-color:#D6F2C3;}
+.InfoGreen .p3_B1, .InfoGreen .p3_B2{height:1px;}
+/*--Color the borders*/
+.InfoGreenContent, .InfoGreen .p3_B2, .InfoGreen .p3_B3,.InfoGreen .xContent {border-left:1px solid #67BD2A; border-right:1px solid #67BD2A;}
+.InfoGreen .p3_B1,.InfoGreen .p4_B1{background:#67BD2A;}
+.InfoGreenContent {Padding:5px;background-color:#D6F2C3;Color:#000;text-align:left;}
+.InfoGreenTitle {color:#3C6090; border-bottom:1px solid #3C6090;font-weight:bold;font-size:13px;padding-left:5px;Margin-bottom:4px;}
+/*IE6 hack*/
+* html .InfoGreenContent {height:0px;}
+
+/*myaccount - top bartab*/
+.InfoBar_Account {background: transparent; margin:0px 0px;}
+.InfoBar_AccountTitle {background-color:#3c6090;font-weight:bold;font-size:13px;padding:4px;padding-bottom:0px; padding-left:10px;color:#FFF;}
+
+/*--change this for color update*/
+.InfoBar_Account .p4_B1, .InfoBar_Account .p4_B2, .InfoBar_Account .p4_B3,.InfoBar_Account .p4_B4, .InfoBar_Account .xContent {background-color:#3c6090;}
+.InfoBar_Account .xContent {padding-bottom:3px;}
+.InfoBar_AccountContent {margin-top:0px;border:1px solid #3c6090;Padding:0px;background-color:#FFF;color:#000;margin-bottom:14px;}
+
+
+/*----generic infobar----*/
+.InfoBar {background: transparent; margin:1px;}
+.InfoBarTitle {color:#000; border-bottom:1px solid #aaa;font-weight:bold;font-size:14px;padding-bottom:1px; Margin-bottom:4px;}
+/*--change this for color update*/
+.InfoBar .p3_B1, .InfoBar .p3_B2, .InfoBar .p3_B3, .InfoBar .p4_B1, .InfoBar .p4_B2, .InfoBar .p4_B3, .InfoBar .p4_B4 {background-color:#f3f3f3;}
+.InfoBar .p3_B1, .InfoBar .p3_B2, .InfoBar .p4_B1, .InfoBar .p4_B2, .InfoBar .p4_B3 {height:1px;}
+/*--Color the borders*/
+.InfoBarContent, .InfoBar .p3_B2, .InfoBar .p3_B3, .InfoBar .p4_B2, .InfoBar .p4_B3, .InfoBar .p4_B4 {border-left:1px solid #d3d3d3; border-right:1px solid #d3d3d3;}
+.InfoBar .p3_B1, .InfoBar .p4_B1{background:#d3d3d3;}
+.InfoBarContent {padding:5px;padding-left:10px; padding-right:10px; background-color:#f3f3f3;}
+/*IE6 hack*/
+* html .InfoBarContent {height:0px;}
+
+/*--extra options--*/
+.InfoBarMargin {margin-bottom:40px}
+.InfoBarTitleClk {color:#0048C0; border-bottom:1px solid #aaa;font-weight:bold;font-size:14px;padding-bottom:1px; Margin-bottom:4px;}
+.InfoBarSubTitle {color:#0048C0; font-weight:bold;font-size:12px;}
+.InfoBarSubTitleInactive {color:#999; font-weight:bold;font-size:12px;}
+.InfoBarSplt{border-bottom:2px solid #999;}
+.InfoBarSquare {background-color:#eeeeee; border:solid 1px #888; border-bottom:solid 0px #fff; padding:3px; padding-left:7px; color:#666; font:12px/2.0em Arial; font-weight:bold }
+.InfoBarContent_bgW {margin-top:1px;border:1px solid #3c6090;Padding:5px;background-color:#FFF;}
+
+.InnerContent {padding:5px;padding-left:10px; padding-right:10px; background-color:#f3f3f3;}
+/*IE6 hack*/
+* html .InnerContent {height:0px;}
+
+
+
+/*---info notes nested in infobar--*/
+
+/*--change this for color update*/
+.InfoNotes .p3_B1, .InfoNotes .p3_B2, .InfoNotes .p3_B3,.InfoNotes .xContent {background-color:#FFFFFF;}
+.InfoNotes .p3_B1, .InfoNotes .p3_B2{height:1px;}
+/*--Color the borders*/
+.InfoNotesContent, .InfoNotes .p3_B2, .InfoNotes .p3_B3,.InfoNotes .xContent {border-left:1px solid #666; border-right:1px solid #666;}
+.InfoNotes .p3_B1,.InfoNotes .p4_B1{background:#666;}
+.InfoNotesContent {Padding:5px;background-color:#FFFFFF;Color:#000;text-align:left;}
+.InfoNotesTitle {color:#999; border-bottom:1px solid #999;font-weight:bold;font-size:13px;padding-left:5px;Margin-bottom:4px;}
+/*IE6 hack*/
+* html .InfoNotesContent {height:0px;}
+
+/*Left Nav Menu area*/
+.InfoBarLeft {background: transparent; margin:0px 10px 0px 5px}
+/*--change this for color update*/
+.InfoBarLeft .p3_B1, .InfoBarLeft .p3_B2, .InfoBarLeft .p3_B3, .InfoBarLeft .xContent {}
+.InfoBarLeft .xContent {padding-bottom:3px;}
+.InfoBarLeftContent {margin-top:1px;border:1px solid #3c6090;Padding:5px;color:#FFF;}
+.InfoBarLeftContent A {color:#FFF;}
+
+.FilterBar .p3_B1, .FilterBar .p3_B2, .FilterBar .p3_B3, .FilterBar .Content {background-color:#dee9f7;border-left:1px solid #9BA3AD;border-right:1px solid #9BA3AD;}
+.FilterBar .p3_B1 {background-color:#9BA3AD;}
+.FilterBar .p3_B1, .FilterBar .p3_B2 {height:1px;}
+.FilterBar .Content {padding:4px 8px;}
+.CrossTabBar .p3_B1, .CrossTabBar .p3_B2, .CrossTabBar .p3_B3, .CrossTabBar .Content {background-color:#def7df;border-left:1px solid #9BAD9C;border-right:1px solid #9BAD9C;}
+.CrossTabBar .p3_B1 {background-color:#9BAD9C;}
+.CrossTabBar .p3_B1, .CrossTabBar .p3_B2 {height:1px;}
+.CrossTabBar .Content {padding:4px 8px;}
+.TotalBar .p3_B1, .TotalBar .p3_B2, .TotalBar .p3_B3, .TotalBar .Content {background-color:#f3f3f3;border-left:1px solid #d3d3d3;border-right:1px solid #d3d3d3;}
+.TotalBar .p3_B1 {background-color:#d3d3d3;}
+.TotalBar .p3_B1, .TotalBar .p3_B2 {height:1px;}
+.TotalBar .Content {padding:4px 8px;text-align:left;}
+
+
+
+#popupTitleBar {background:#444 #CEEFFF; /*url(/img/tile_cat.gif) repeat-x*/
+background-color:#f8ffe9;font-weight: bold;height: 2.0em;padding: 5px;padding-bottom:3px;
+position: relative;z-index: 203;border-bottom: 2px solid #999;color: #FFF;border-radius: 15px;}
+
+/*
+{background:#444 #CEEFFF; /*url(/img/tile_cat.gif) repeat-x
+background-color: #333344;font-weight: bold;height: 2.0em;padding: 5px;padding-bottom:3px;
+position: relative;z-index: 203;border-bottom: 1px solid #5176B5;color: #FFF;}
+*/
+
+#popupTitle {float:left;font: 15px/2.0em Trebuchet MS, Arial;font-weight:bold;line-height:1.8em;margin-left:3px;}
+#popupControls {float: right;cursor: pointer;background-color:transparent;border-width:0px;}
+#popupControls a span {display: block;height: 24px;width: 24px;padding-top:4px;}
+
+
+
+
+
+
+.linkColor {color:#0048C0}
+IMG {border:0px;}
+INPUT.small, textarea.small, SELECT.small {font-size:11px}
+.maxChr{font-size:10px;color:#666;padding-left:10px;}
+.hiddenHref {color:#000;text-decoration:none; font-size:12px;}
+.hiddenHref:hover {text-decoration:underline}
+
+
+SUBMIT{padding:1px;}
+/*.Clean  input {border:0px solid #555;background-color:transparent;}*/
+.CleanList  input {border:0px;background-color:transparent;} LABEL {padding-left:5px}
+INPUT.Other, textarea.Other {border: 1px solid #555;background-color:#FFF;padding:1px;}
+
+.RQR {background-color:#FFFFCC;border: 1px solid #6197CE}
+
+
+/*---standardize page items--*/
+/*--top bar--*/
+#LogoBar {display:block;border-top:4px solid #4d70a0;background:#C2D3EA url(http://surveymonkey.com/img/tb_BG.gif) repeat-x;color:#000;}
+/*--top Site Nav bar--*/
+#SiteNavBar {display:block;padding-top:1px;background:#444 url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/SiteNavBtn_ON.gif) repeat-x;border-bottom:solid 2px #000; border-top:solid 1px #d9d9d9;}
+A.SiteNavBtn,A.SiteNavBtn_on,A.SiteNavBtn_R {font: 11px/2.1 verdana;font-size: 100%;text-decoration:none;padding:6px 10px;color: #ddd;Border-right:1px solid #666;font-weight:bold;}
+A.SiteNavBtn_R {Border-left:1px solid #666;Border-right:0px;}
+A.SiteNavBtn:hover, A.SiteNavBtn_R:hover {color: #FFF;background-repeat:repeat-x;}
+A.SiteNavBtn:active, A.SiteNavBtn_R:active {color: #fff;background:#444 url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/BG_SiteNavBar.gif);background-repeat:repeat-x;}
+A.SiteNavBtn_on {color: #AfD6F6; }
+A.SiteNavBtn_on:active {color: #fff;background:#444 url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/BG_SiteNavBar.gif);background-repeat:repeat-x;}
+html>body A.SiteNavBtn,A.SiteNavBtn_on,A.SiteNavBtn_R {width: auto;height: auto;}
+
+/*--content table--*/
+#ContentArea {background: #fff; margin:0px 7px;border:solid 1px #999;border-bottom:0px;}
+#TabContent, #NoTabContent{background-color:#A4C6FF; margin:0px 7px;padding-top:10px;border:1px solid #3C6090;}
+#NoTabContent{padding:0px;background-color:#FFF}
+#NoTabContent .xInfoContent{background-image:none;Border:none;}
+
+
+
+
+/*--survey editor/results--*/
+#EditContainer {width: 100%;}
+#EditContent {margin-left:-170px}
+#EditSidebar {width: 170px;position: absolute;padding-right:5px;margin-right:5px;}
+/*-------------------------*/
+
+#bottombar{margin-top:15px;}
+#bottombar a{color:#666;margin:0px 6px;}
+#bottombar div{margin-bottom:8px;text-align:center;color:#888888;}
+
+#HideText{color: #D3E2F8;}
+#HideText A{color: #D3E2F8;}
+#HideText A:hover{color: #000;}
+
+
+/*--Content area--*/
+.colContent{background-color:#fff;padding: 10px 15px}
+.colContent_r{padding: 0px 10px}
+.colContent_full{border-left:1px solid #7fA3D3;border-right:1px solid #7fA3D3; background-color:#fff;padding: 10px 15px}
+.colNav{background-color:#7fA3D3;color:#FFF;PADDING-left:2px;padding-top:7px;}
+.colAccountLeft{background-color:#FFF;padding:10px 12px;}
+
+.chartNorm {background-color:#777; padding:1px 1px 1px 1px; background-color:#183154 }
+.chartMax {background-color:#3c6090; color:#eee}
+
+
+/*++++++++++++++++Collector STUFF+++++++++++++++++++++++++++++++++*/
+/*special cased topbar that does not have rounded right top corners*/
+.xCol {background: transparent; margin:0px;}
+/*--change this for color update*/
+.xCol .p4_B1, .xCol .p4_B2, .xCol .p4_B3, .xCol .p4_B4 {background-color:#E9E9E9;}
+.xCol .p4_B1, .xCol .p4_B2, .xCol .p4_B3 {height:1px;margin-right:0px;}
+.xCol .p4_B4 {margin-right:0px;}
+/*--Color the borders*/
+.xColContent, .xCol .p4_B2, .xCol .p4_B3, .xCol .p4_B4 {border-left:1px solid #3C6090;}
+.xCol .p4_B1{background:#3C6090;}
+.xColContent {Padding:1px 5px;background-color:#E9E9E9;}
+/*IE6 hack*/
+* html .xColContent {height:0px;}
+
+/*--collector bar--*/
+.CollMain {font-size: 12px; color: #000; font-weight: bold; padding-left: 5px; line-height:16px}
+.CollSub {font-size: 12px; color: #000; font-weight: bold; padding-left: 5px;margin-right: 12px;}
+
+
+
+
+
+/*--DetailPage--*/
+.StatOnline{font-weight:bold;color:green;}
+.StatClosed{font-weight:bold;color:#aa0000;}
+.StatNew{font-weight:bold;color:#888;}
+
+.RestrictSet{font-weight:bold;color:green;}
+.RestrictMet{font-weight:bold;color:red;}
+
+
+/*--Collector status area--*/
+#msgStatus {margin:10px;border:2px solid #666;background-color:#fff;}
+.StatHDR {padding:3px;Font-size:15px;font-weight:bold;color:#222;text-align:center;}
+.Statinfo {padding:3px;color:#333;}
+#msgStatus .MiniStatus {Font-size:12px;font-weight:bold;color:#000;}
+#msgStatus .StatActivate {padding:5px;text-align:center;}
+
+A.StatusLink {width:75%;display:block;font: 17px/1.0 verdana;text-decoration:none;font-weight:bold;color:#333366;border:1px solid #333366;background-color:#ddd;padding:3px;}
+A.StatusLink:hover {color:#369;border:1px solid #369;background-color:#eee;}
+.StatusLink IMG {vertical-align:-3px;}
+html>body A.StatusLink {height: auto;}
+
+/*--account manager area--*/
+HR { color: #ccc;border:0px;background-color: #ccc;height: 1px;padding:0px;}
+.cancel  { color: #f00;font-weight:bold;}
+
+
+/*-- general page layout items --*/
+TD.FormTitle {color:#3c6090; border-bottom:1px solid #3c6090;font-weight:bold;font-size:15px;padding-top:1px;padding-bottom:2px;}
+TD.PopupTitle {color:#444; background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/tile_sub.gif) 0px 0px repeat-x;border-bottom:solid 1px #666; font-weight:bold;font-size:15px;padding-bottom:2px;padding-left:5px}
+TD.FormHdr, TD.FormHdrOpt, TD.FormHdrReq{font-weight:bold;font-size:12px;text-align:right;padding-right:5px; white-space: nowrap;}
+TD.FormHdrOpt{color:#999;}
+TD.FormHdrReq{color:#f33;}
+TD.FormSplit {border-bottom:1px solid #999;font-size:1px;}
+TD.txtHdr {font-weight:bold;}
+TR.On {border-bottom:1px solid #999;}
+TD.BdrBtm {border-bottom:1px solid #ccc;}
+
+
+/*---------message boxes (not MonkeyMessages)-------*/
+#msgLoginErr {margin:5px;border:1px solid #300;padding:3px;background-color:#900;color: #fff;}
+.msgError {Padding:5px;color:red;font-weight:bold;}
+#msgUpdated {padding:10px;text-align:center;border:1px solid #000;background-color:#003D5D;color: #FFF;}
+#msgNotes,#msgNotesAlt {border: solid 1px #B5DCF9; background-color: #E2ECFA; padding: 5px; display:block;}
+#msgNotesAlt {padding:10px;border:1px solid #999;}
+#msgNotes TD, #msgNotesAlt TD {white-space:nowrap;}
+
+.errItem{Padding:5px; border:1px solid #900;background-color:#900;color: #fff;display:block;margin-bottom:5px;Border-bottom:2px solid #300;}
+
+
+/*-- Message Summary --*/
+.msgPreviewText {font-family:Courier; font-size:small}
+
+/*-- general page layout items --*/
+
+/*--Monkey Message--*/
+#MsgZone {display:block;}
+#MsgZone TABLE.msg{padding-top:5px; padding-bottom:5px;}
+#MsgZone TABLE.msgCap{padding:0px;}
+#MsgZone TD{padding:0px;}
+#MsgZoneTxt {Padding-left:8px;Font-size:12px;font-weight:bold;color:#FFF;}
+#MsgZoneBasic {background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/reminder_shadow_white.gif) 0px 0px repeat-x;Font-size:12px;color:#000;background-color:#ffffff;border-bottom:1px solid #666;padding-top:2px;}
+#MsgZoneBasic TD{white-space: nowrap;text-align:center;}
+#MsgZoneBasic TD.wSplit{padding-left:5px;border-left:1px solid #666;}
+#MsgZoneGuest {background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/reminder_shadow.gif) 0px 0px repeat-x;Font-size:12px;color:#000;background-color:#ffffdc;border-bottom:1px solid #666;padding-top:2px;}
+#MsgZoneGuest TD{white-space: nowrap;text-align:center;}
+#MsgZoneGuest TD.wSplit{padding-left:5px;border-left:1px solid #666;}
+
+/*-----------------repondant list table nav-----------------------*/
+#ListBtn { DISPLAY: inline; FONT-SIZE: 22px }
+#ListBtn IMG { BORDER: 0px; HEIGHT: 20px;}
+#ListBtn A { BACKGROUND-COLOR: #fff }
+#ListBtn A:hover { BACKGROUND-COLOR: #ccccff }
+
+#RespList {background-color:#FFF; border:1px solid #000;border-top:0px;}
+#RespList TD { BORDER-RIGHT: #000 1px solid; FONT-SIZE: 9px; BORDER-TOP: #000 1px solid }
+#RespList TD.RespListNav {BORDER-TOP:0px; BORDER-RIGHT: 0px; BACKGROUND-COLOR: #DEE9F7; padding:3px;}
+#RespList TD.RespListHDR {BORDER-TOP:#666 1px solid;  BORDER-RIGHT: #666 1px solid; BACKGROUND-COLOR: #666;font-weight:bold;color:#FFF;}
+#RespList TR.On {background-color:#EBF4FE;}
+
+/*----------------search-------------*/
+#RespListSrch {background-color:#A4C6FF; padding:5px;color:#3C6090;font-weight:bold;}
+#RespListSrch TD {BORDER-TOP:0px; BORDER-RIGHT: 0px;padding:3px; }
+
+
+#ListNavBtnOff  {display:inline;font: 10px/2.0 verdana;border:1px solid #000;border-left:0px;padding:3px 6px 3px 6px;background-color:#ddd;color:#999;}
+#ListNavBtn     {display:inline;}
+#ListNavBtn A {display:inline;font: 10px/2.0 verdana;border:1px solid #000;border-left:0px;padding:3px 6px 3px 6px;background-color:#ddd;text-decoration:none;color:#000;}
+#ListNavBtn A.on {background-color:#fff;color:#000;font-weight:bold;}
+#ListNavBtn A.ListNavCap {border-left:1px solid #000;}
+
+#ListNavBtn A:hover {background-color:#000;color:#FFF;}
+html>body #ListNavBtn A {width: auto;height: auto;}
+
+
+
+/*--login info--*/
+#Login {background:#ccc;color:#333;padding:0px;}
+#Login INPUT{border: 1px solid #333;background-color:#FFF;padding:1px;}
+#Login .Clean  input {border:0px;background-color:transparent;}
+.LoginTitle {font-size:12px;font-weight:bold;border-bottom: 1px solid #333;border-top: 1px solid #333;background-color:#666;color:#fff;padding:4px;}
+.LoginTbl {padding:6px 0px 0px 0px;border-left:1px solid;border-right:1px solid;border-color:#999;}
+
+/*--billing invoice grid--*/
+/*--Design for summary grid views--*/
+TD.GRIDhdr {border-bottom:2px solid #666;padding:2px;Font-weight:bold;Color:#666;font-size:10px;white-space:nowrap;}
+TD.wSplit {border-left:1px solid #ddd;padding:0px;text-align:center;}
+TR.On {background-color:#FFF;}
+
+
+.PageTitle{color:#0048C0; /*border-bottom:2px solid #666;*/ padding-right:25px; font-weight:bold;font-size:18px;}
+TD.PageTitle{color:#222222; /*border-bottom:2px solid #666;*/ padding-right:25px; font: bold 20px Trebuchet MS, Tahoma, Verdana, sans-serif; color: #222}
+TD.PageDesc{padding-top:15px; font-size:12px;}
+
+TD.FormTitleInactive{color:#999; font-weight:bold;font-size:14px;}
+TD.FormTitleActive{cursor:pointer; color:#0048C0;/*color:#063986;*/ border-bottom:1px solid #333;font-weight:bold;font-size:13px;}
+TD.FormTitleActive:hover {}
+
+/*question builder*/
+.ErrorTextField {margin-left:30px}
+
+/*-------------grid code--------------*/
+TABLE.Grid {background-color:#FFF;border-top:1px solid #999;border-bottom:1px solid #ccc;border-left:1px solid #bbb;}
+TABLE.Grid TH {background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/bg-exlt-bluegrad.gif) 0px 0px repeat-x;border-bottom:solid 1px #376EBE; background-color:#ccc;font-size:11px;border-right:solid 1px #aaa;padding-left:3px;color:#000}
+TABLE.Grid TH.noSplit {}
+
+/*--on state--*/
+TABLE.Grid TD.on,TABLE.Grid TD.on_lt_hdr,TABLE.Grid TD.on_rt_hdr,TABLE.Grid TD.on_lt,TABLE.Grid TD.on_rt {background-color:#f5f5f5;}
+TABLE.Grid TD {padding:3px;text-align:center;border-top:1px solid #ccc;border-right:1px solid #ccc;}
+TABLE.Grid TD.noSplit {padding:3px;text-align:center;border-top:1px solid #CCC;border-right:0px}
+TABLE.GridBtm {border:1px solid #AAA; border-top:0px; padding-left:5px; padding-right:5px; background-color:#ccc;color:#000;font-size:11px;font-weight:bold}
+
+/*-- alt code--*/
+TABLE.GridAlt {background-color:#FFF;border:1px solid #999;}
+TABLE.GridAlt TH {background: url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/img/bg-exlt-bluegrad.gif) 0px 0px repeat-x;border-bottom:solid 1px #376EBE; background-color:#ccc;font-size:11px;padding-left:3px;color:#000}
+TABLE.GridAlt TD {padding:3px;}
+TABLE.GridAlt TD.borderBtm {border-bottom:1px solid #CCC}
+TABLE.GridNone TD {border-width:0px;text-align:left}
+
+/*--alignment and text treatemnt--*/
+TABLE.Grid TD.rt_hdr, TABLE.Grid TD.on_rt_hdr,TABLE.Grid TD.rt, TABLE.Grid TD.on_rt {padding-left:5px;text-align:right;}
+TABLE.Grid TD.lt_hdr, TABLE.Grid TD.on_lt_hdr,TABLE.Grid TD.lt, TABLE.Grid TD.on_lt  {padding-left:5px;text-align:left;}
+TABLE.Grid TD.rt_hdr, TABLE.Grid TD.on_rt_hdr {font-weight:bold;padding-right:8px;}
+TABLE.Grid TD.lt_hdr, TABLE.Grid TD.on_lt_hdr {text-align:left;font-weight:bold;}
+/*-------------grid code--------------*/
+
+
+.gBtn, .gBtnOff, .gBtnOffcap, .gBtnOn, .gBtn A {display:inline; color:#105CB6; }
+.gBtnOff,  .gBtnOffcap, .gBtnOn, .gBtn A {font: 10px/1.8 verdana;border:1px solid #999;border-left:0px;padding:2px 6px 2px 6px;}
+.gBtnOn         {background-color:#2E6AB1;color:#FFF;font-weight:bold;}
+.gBtnOff        {background-color:#ddd;color:#999;}
+.gBtnOffcap     {background-color:#ddd;color:#999;border-left:1px solid #999;}
+.gBtn A.cap     {border-left:1px solid #999;}
+.gBtn A         {background-color:#E6F0FF;text-decoration:none;color:#000;}
+.gBtn A:hover {background-color:#FBE694;color:#000;}
+html>body.gBtn A {width: auto;height: auto;}
+
+.RadioTextLarge {color:#0048C0;font-weight:bold;font-size:14px;padding-left:0px; margin-left:3px}
+.RadioTextLargeDisabled {color:#aaa;font-weight:bold;font-size:14px;padding-left:0px; margin-left:3px}
+.RadioTextLargeDesc {padding-left:4px; padding-top:5px; font-size:12px;}
+.RadioTextLarge:hover {text-decoration:underline; background-color:#C3D2E8;cursor:pointer}
+
+.LargeHeading {font: bold 22px Trebuchet MS, Tahoma, Verdana, sans-serif; color: #222}
+.ErrorMessageText {font-size:12px; line-height:21px; font-weight:bold;color:#aa0000;}
+DIV.ErrorMessage {padding-left:31px;padding-bottom:10px;margin-top:0px; margin-bottom:0px; font-size:12px; line-height:21px; font-weight:bold;color:#aa0000;background:transparent url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/icons/forbidden.gif);background-repeat:no-repeat; background-position:left top; text-align:left}
+DIV.ErrorMessageSmall {padding-left:21px;padding-bottom:5px;margin-top:5px; margin-bottom:0px; font-size:12px; line-height:16px; font-weight:bold;color:#aa0000;background:transparent url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/icons/forbidden_small.gif);background-repeat:no-repeat; background-position:left top; text-align:left}
+DIV.SuccessMessage {padding-left:31px;padding-bottom:10px;margin-top:10px; margin-bottom:10px; font-size:12px; line-height:21px;font-weight:bold;color:#009900;background:transparent url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/icons/checkgood.gif);background-repeat:no-repeat; background-position:left top; text-align:left}
+DIV.TipMessage {padding-left:31px;padding-bottom:10px;margin-top:10px; margin-bottom:0px; font-size:12px; line-height:21px;font-weight:bold;color:#000;background:transparent url(file:///C|/Documents and Settings/Sheetal/Local Settings/Temporary Internet Files/Content.IE5/icons/information.gif);background-repeat:no-repeat; background-position:left top; text-align:left}
+
+
+
+/* THICKBOX */
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> global settings needed for thickbox <<<-----------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+
+html, body {
+min-height: 100%;
+height: auto !important;
+height: 100%
+}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox specific link and font settings <<<------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_window {font: 12px Arial, Helvetica, sans-serif;color: #333333; border-radius:20px;}
+#TB_secondLine {font: 10px Arial, Helvetica, sans-serif;color:#666666;}
+#TB_window a:link {color: #666666;}
+#TB_window a:visited {color: #666666;}
+#TB_window a:hover {color: #000;}
+#TB_window a:active {color: #666666;}
+#TB_window a:focus{color: #666666;}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox settings <<<-----------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_overlay {position: absolute;z-index:100;top: 0px;left: 0px;background-color:#000;filter:alpha(opacity=70);-moz-opacity: 0.7;opacity: 0.7;}
+
+#TB_window {position: absolute;background: #ffffff;z-index: 102;color:#000000;display:none;border: 2px solid #444;border-top: 1px solid #444;text-align:left;}
+
+#TB_window img {display:block;margin: 15px 0 0 15px;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;border-top: 1px solid #666;border-left: 1px solid #666;}
+#TB_caption{height:25px;padding:7px 30px 10px 25px;float:left;}
+#TB_closeWindow{height:25px;padding:11px 25px 10px 0;float:right;}
+#TB_closeAjaxWindow{padding:5px 10px 7px 0;margin-bottom:1px;text-align:right;float:right;}
+#TB_ajaxWindowTitle{float:left;padding:7px 0 5px 10px;margin-bottom:1px;}
+#TB_title{background-color:#e8e8e8;height:27px;}
+#TB_ajaxContent{clear:both;padding:2px 15px 15px 15px;overflow:auto;text-align:left;line-height:1.4em;}
+#TB_ajaxContent p{padding:5px 0px 5px 0px;}
+#TB_load{text-align: center;position: absolute;top: 50%;left: 0px;overflow: visible;visibility: visible;z-index:101;display:none;height:100px;width:100px;z-index:101;}
+#TB_loadContent  {margin-left: -125px;position: absolute;top: -50px;left: 50%;width: 250px;height: 100px;visibility: visible;}
+#TB_HideSelect{z-index:99;position:absolute;top: 0;left: 0;background-color:#fff;border:none;filter:alpha(opacity=0);-moz-opacity: 0;opacity: 0;}
+#TB_iframeContent{clear:both;border:none;margin-bottom:-1px;margin-top:1px;_margin-bottom:1px;}
+
+#TB_ContentShadow{background: url(/img/content_shadow.gif) 0px 0px repeat-x; width:100%}
+.TB_CloseButton{background: url(../images/close_pop.png) 0px 0px repeat-x;}
+
